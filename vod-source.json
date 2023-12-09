@@ -1,5 +1,5 @@
 [
-    {"name": "海外看资源","api": "https://haiwaikan.com/api.php/provide/vod/"},
+    {"name": "海外看资源","api": "https://haiwaikan.com/api.php/provide/vod/","note": "需要代理"},
     {"name": "紅牛资源","api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/"},
     {"name": "量子资源","api": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/"},
     {"name": "開放電影","api": "https://vod-demo.onrender.com/pubdovod.php"},
