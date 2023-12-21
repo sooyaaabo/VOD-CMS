@@ -8,8 +8,8 @@
         "quickSearch": 1
     },
     {
-        "key": "紅牛资源",
-        "name": "紅牛资源(切)",
+        "key": "红牛资源",
+        "name": "红牛资源(切)",
         "type": 1,
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/",
         "searchable": 1,
@@ -183,7 +183,7 @@
         "searchable": 1,
         "quickSearch": 1
     },
-        {
+    {
         "key": "极速资源",
         "name": "极速资源(切)",
         "type": 1,
@@ -244,6 +244,86 @@
         "name": "四圈资源(切)",
         "type": 1,
         "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "卧龙资源",
+        "name": "卧龙资源(切)",
+        "type": 1,
+        "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quicksearch": 1
+    },
+    {
+        "key": "映迷资源",
+        "name": "映迷资源(切)",
+        "type": 1,
+        "api": "https://www.inmi.app/api.php/provide/vod/",
+        "searchable": 1,
+        "quicksearch": 1
+    },
+    {
+        "key": "量子资源",
+        "name": "量子资源(切)",
+        "type": 1,
+        "api": "http://cj.lziapi.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quicksearch": 1
+    },
+    {
+        "key": "樱花资源网",
+        "name": "樱花资源网(切)",
+        "type": 1,
+        "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "速博资源",
+        "name": "速博资源(切)",
+        "type": 1,
+        "api": "https://subocaiji.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "飘花影院",
+        "name": "飘花影院(切)",
+        "type": 1,
+        "api": "http://www.ahjiuman.com/api.php/provide/vod/at/json",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "天翼资源",
+        "name": "天翼资源(切)",
+        "type": 1,
+        "api": "https://www.911ysw.top/tianyi.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "虎牙资源",
+        "name": "虎牙资源(切)",
+        "type": 1,
+        "api": "https://www.huyaapi.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "百度资源",
+        "name": "百度资源(切)",
+        "type": 1,
+        "api": "https://api.apibdzy.com/api.php/provide/vod/",
+        "searchable": 1,
+        "quickSearch": 1
+    },
+    {
+        "key": "飘零影院",
+        "name": "飘零影院(切)",
+        "type": 1,
+        "api": "https://p2100.net/api.php/provide/vod/",
         "searchable": 1,
         "quickSearch": 1
     },
