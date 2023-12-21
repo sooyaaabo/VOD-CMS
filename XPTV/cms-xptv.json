@@ -248,14 +248,6 @@
         "quickSearch": 1
     },
     {
-        "key": "卧龙资源",
-        "name": "卧龙资源(切)",
-        "type": 1,
-        "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
-        "searchable": 1,
-        "quicksearch": 1
-    },
-    {
         "key": "映迷资源",
         "name": "映迷资源(切)",
         "type": 1,
