@@ -248,6 +248,14 @@
         "quickSearch": 1
     },
     {
+        "key":"AIvin",
+        "name":"AIvin(切)",
+        "type":1,
+        "api":"http://lbapiby.com/api.php/provide/vod/at/json",
+        "searchable":1,
+        "quickSearch":1
+    },
+    {
         "key": "一本道资源",
         "name": "一本道资源(切)",
         "type": 1,
