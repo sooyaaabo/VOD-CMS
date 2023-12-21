@@ -240,8 +240,8 @@
         "quickSearch": 1
     },
     {
-        "key": "麻豆视频",
-        "name": "麻豆视频(切)",
+        "key": "麻豆",
+        "name": "麻豆(切)",
         "type": 1,
         "api": "https://www.caiji04.com/home/cjapi/cfc7/mc10/vod/xml",
         "searchable": 1,
