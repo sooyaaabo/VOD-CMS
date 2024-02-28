@@ -1,8 +1,8 @@
 [
     {
         "name": "海外看",
-        "note": "需要代理",
-        "api": "https://haiwaikan.com/api.php/provide/vod/"
+        "api": "https://haiwaikan.com/api.php/provide/vod/",
+        "note": "需要代理"
     },
     {
         "name": "欧乐影院",
