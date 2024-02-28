@@ -1,7 +1,7 @@
 [
     {
         "name": "海外看",
-        "note": "需要代理"
+        "note": "需要代理",
         "api": "https://haiwaikan.com/api.php/provide/vod/"
     },
     {
