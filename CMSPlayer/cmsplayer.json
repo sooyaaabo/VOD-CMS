@@ -1,7 +1,20 @@
 [
     {
-        "name": "海外看（代理）",
+        "name": "海外看",
+        "note": "需要代理"
         "api": "https://haiwaikan.com/api.php/provide/vod/"
+    },
+    {
+        "name": "欧乐影院",
+        "api": "https://olevod.com/api.php/provide/vod/"
+    },
+    {
+        "name": "低端影视",
+        "api": "https://ddys.pro/api.php/provide/vod/"
+    },
+    {
+        "name": "在线之家",
+        "api": "https://zxzja.com/api.php/provide/vod/"
     },
     {
         "name": "极速资源",
