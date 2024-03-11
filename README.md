@@ -1,7 +1,7 @@
-![sooyaaabo's GitHub stats](https://github-readme-stats.vercel.app/api?username=sooyaaabo&show_icons=true&rank_icon=github&count_private=true&theme=buefy)
-
 # VOD,CMS资源
 自用VOD,CMS资源，由网上资料整合。<br>
+
+![Alt](https://repobeats.axiom.co/api/embed/668439c2cba294942c120938d9d531cb70fae71d.svg "Repobeats analytics image")
 
 ## 使用声明
 本资源仅限测试、学习、交流，严禁用于商业用途，请于24小时内删除。禁止传播，谢谢。<br>
