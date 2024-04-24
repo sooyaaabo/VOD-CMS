@@ -1,5 +1,9 @@
 [
     {
+        "name": "360资源",
+        "api": "https://360zy.com/api.php/provide/vod/"
+    },
+    {
         "name": "39影視",
         "api": "https://www.39kan.com/api.php/provide/vod/"
     },
@@ -45,7 +49,6 @@
     },
     {
         "name": "海外看",
-        "note": "需要代理",
         "api": "https://haiwaikan.com/api.php/provide/vod/"
     },
     {
@@ -81,8 +84,20 @@
         "api": "https://kuaikan-api.com/api.php/provide/vod/"
     },
     {
+        "name": "快云资源",
+        "api": "https://www.kuaiyunzy.com/api.php/provide/vod/"
+    },
+    {
         "name": "量子资源",
         "api": "https://cj.lziapi.com/api.php/provide/vod/"
+    },
+    {
+        "name": "每天资源",
+        "api": "http://47.113.126.237:1234/api.php/provide/vod/"
+    },
+    {
+        "name": "魔都动漫",
+        "api": "https://caiji.moduapi.cc/api.php/provide/vod/"
     },
     {
         "name": "欧乐影院",
@@ -101,11 +116,15 @@
         "api": "https://caiji.qhzyapi.com/api.php/provide/vod"
     },
     {
+        "name": "四九资源",
+        "api": "https://49zyw.com/api.php/provide/vod/"
+    },
+    {
         "name": "私密影院",
         "api": "https://simiyy.com/api.php/provide/vod/"
     },
     {
-        "name": "速播资源",
+        "name": "速博资源",
         "api": "https://subocaiji.com/api.php/provide/vod/"
     },
     {
@@ -137,8 +156,16 @@
         "api": "https://api.wujinapi.com/api.php/provide/vod/"
     },
     {
+        "name": "闪电资源",
+        "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    {
         "name": "新浪资源",
         "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+    },
+    {
+        "name": "熊掌资源",
+        "api": "https://xzcjz.com/api.php/provide/vod/"
     },
     {
         "name": "樱花资源",
@@ -155,6 +182,10 @@
     {
         "name": "在线之家",
         "api": "https://zxzja.com/api.php/provide/vod/"
+    },
+    {
+        "name": "种子短剧",
+        "api": "https://zzdj.cc/api.php/provide/vod"
     },
     {
         "name": "最大资源",
