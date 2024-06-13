@@ -1,6 +1,14 @@
 {
     "sites": [
         {
+            "key": "360资源",
+            "name": "360资源",
+            "type": 1,
+            "api": "https://360zy.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "39影視",
             "name": "39影視",
             "type": 1,
@@ -37,6 +45,14 @@
             "name": "暴风资源",
             "type": 1,
             "api": "https://bfzyapi.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "刺桐资源",
+            "name": "刺桐资源",
+            "type": 1,
+            "api": "http://ys9.cttv.vip/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -81,6 +97,14 @@
             "quickSearch": 1
         },
         {
+            "key": "官网资源",
+            "name": "官网资源",
+            "type": 1,
+            "api": "http://gwcms.cttv.vip/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "光速资源",
             "name": "光速资源",
             "type": 1,
@@ -93,6 +117,22 @@
             "name": "海外看",
             "type": 1,
             "api": "https://haiwaikan.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "豪华资源",
+            "name": "豪华资源",
+            "type": 1,
+            "api": "https://hhzyapi.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "黑木耳",
+            "name": "黑木耳",
+            "type": 1,
+            "api": "https://www.heimuer.tv/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -154,9 +194,17 @@
         },
         {
             "key": "快看资源",
-            "name": "快车资源",
+            "name": "快看资源",
             "type": 1,
             "api": "https://kuaikan-api.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "快云资源",
+            "name": "快云资源",
+            "type": 1,
+            "api": "https://www.kuaiyunzy.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -165,6 +213,30 @@
             "name": "量子资源",
             "type": 1,
             "api": "https://cj.lziapi.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "每天资源",
+            "name": "每天资源",
+            "type": 1,
+            "api": "http://47.113.126.237:1234/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "魔都动漫",
+            "name": "魔都动漫",
+            "type": 1,
+            "api": "https://caiji.moduapi.cc/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "奈飞狗",
+            "name": "奈飞狗",
+            "type": 1,
+            "api": "https://netflixdog.club/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -197,6 +269,22 @@
             "name": "奇虎资源",
             "type": 1,
             "api": "https://caiji.qhzyapi.com/api.php/provide/vod",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "闪电资源",
+            "name": "闪电资源",
+            "type": 1,
+            "api": "http://sdzyapi.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "四九资源",
+            "name": "四九资源",
+            "type": 1,
+            "api": "https://49zyw.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -309,6 +397,14 @@
             "name": "在线之家",
             "type": 1,
             "api": "https://zxzja.com/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
+            "key": "种子短剧",
+            "name": "种子短剧",
+            "type": 1,
+            "api": "https://zzdj.cc/api.php/provide/vod",
             "searchable": 1,
             "quickSearch": 1
         },
