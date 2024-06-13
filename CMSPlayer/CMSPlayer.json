@@ -24,6 +24,10 @@
         "api": "https://bfzyapi.com/api.php/provide/vod/"
     },
     {
+        "name": "刺桐资源",
+        "api": "http://ys9.cttv.vip/api.php/provide/vod/"
+    },
+    {
         "name": "低端影视",
         "api": "https://ddys.pro/api.php/provide/vod/"
     },
@@ -44,12 +48,24 @@
         "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod/"
     },
     {
+        "name": "官网资源",
+        "api": "http://gwcms.cttv.vip/api.php/provide/vod/"
+    },
+    {
         "name": "光速资源",
         "api": "https://api.guangsuapi.com/api.php/provide/vod/"
     },
     {
         "name": "海外看",
         "api": "https://haiwaikan.com/api.php/provide/vod/"
+    },
+    {
+        "name": "豪华资源",
+        "api": "https://hhzyapi.com/api.php/provide/vod"
+    },
+    {
+        "name": "黑木耳",
+        "api": "https://www.heimuer.tv/api.php/provide/vod"
     },
     {
         "name": "红牛资源",
@@ -100,6 +116,10 @@
         "api": "https://caiji.moduapi.cc/api.php/provide/vod/"
     },
     {
+        "name": "奈飞狗",
+        "api": "https://netflixdog.club/api.php/provide/vod"
+    },
+    {
         "name": "欧乐影院",
         "api": "https://olevod.com/api.php/provide/vod/"
     },
@@ -114,6 +134,10 @@
     {
         "name": "奇虎资源",
         "api": "https://caiji.qhzyapi.com/api.php/provide/vod"
+    },
+    {
+        "name": "闪电资源",
+        "api": "http://sdzyapi.com/api.php/provide/vod/"
     },
     {
         "name": "四九资源",
@@ -154,10 +178,6 @@
     {
         "name": "无尽资源",
         "api": "https://api.wujinapi.com/api.php/provide/vod/"
-    },
-    {
-        "name": "闪电资源",
-        "api": "http://sdzyapi.com/api.php/provide/vod/"
     },
     {
         "name": "新浪资源",
