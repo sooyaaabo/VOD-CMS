@@ -153,6 +153,14 @@
             "quickSearch": 1
         },
         {
+            "key": "华为8",
+            "name": "华为8",
+            "type": 1,
+            "api": "https://hw8.live/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "火狐资源",
             "name": "火狐资源",
             "type": 1,
