@@ -76,6 +76,10 @@
         "api": "https://www.huyaapi.com/api.php/provide/vod/"
     },
     {
+        "name": "华为8",
+        "api": "https://hw8.live/api.php/provide/vod/",
+    },
+    {
         "name": "火狐资源",
         "api": "https://hhzyapi.com/api.php/provide/vod/"
     },
