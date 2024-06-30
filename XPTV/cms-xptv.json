@@ -113,6 +113,14 @@
             "quickSearch": 1
         },
         {
+            "key": "海外吧",
+            "name": "海外吧",
+            "type": 1,
+            "api": "https://hw8.live/api.php/provide/vod/",
+            "searchable": 1,
+            "quickSearch": 1
+        },
+        {
             "key": "海外看",
             "name": "海外看",
             "type": 1,
@@ -149,14 +157,6 @@
             "name": "虎牙资源",
             "type": 1,
             "api": "https://www.huyaapi.com/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1
-        },
-        {
-            "key": "华为8",
-            "name": "华为8",
-            "type": 1,
-            "api": "https://hw8.live/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },

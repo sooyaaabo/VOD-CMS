@@ -70,6 +70,11 @@
         "api": "https://api.guangsuapi.com/api.php/provide/vod/"
     },
     {
+        "name": "海外吧",
+        "type": 1,
+        "api": "https://hw8.live/api.php/provide/vod/",
+    },
+    {
         "name": "海外看",
         "type": 1,
         "api": "https://haiwaikan.com/api.php/provide/vod/"
@@ -93,11 +98,6 @@
         "name": "虎牙资源",
         "type": 1,
         "api": "https://www.huyaapi.com/api.php/provide/vod/"
-    },
-    {
-        "name": "华为8",
-        "type": 1,
-        "api": "https://hw8.live/api.php/provide/vod/",
     },
     {
         "name": "火狐资源",
