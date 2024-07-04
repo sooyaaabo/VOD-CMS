@@ -132,7 +132,7 @@
             "key": "豪华资源",
             "name": "豪华资源",
             "type": 1,
-            "api": "https://hhzyapi.com/api.php/provide/vod",
+            "api": "https://hhzyapi.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -140,7 +140,7 @@
             "key": "黑木耳",
             "name": "黑木耳",
             "type": 1,
-            "api": "https://www.heimuer.tv/api.php/provide/vod",
+            "api": "https://www.heimuer.tv/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
