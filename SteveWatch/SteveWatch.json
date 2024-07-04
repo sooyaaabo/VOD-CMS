@@ -82,12 +82,12 @@
     {
         "name": "豪华资源",
         "type": 1,
-        "api": "https://hhzyapi.com/api.php/provide/vod"
+        "api": "https://hhzyapi.com/api.php/provide/vod/"
     },
     {
         "name": "黑木耳",
         "type": 1,
-        "api": "https://www.heimuer.tv/api.php/provide/vod"
+        "api": "https://www.heimuer.tv/api.php/provide/vod/"
     },
     {
         "name": "红牛资源",
@@ -152,7 +152,7 @@
     {
         "name": "奈飞狗",
         "type": 1,
-        "api": "https://netflixdog.club/api.php/provide/vod"
+        "api": "https://netflixdog.club/api.php/provide/vod/"
     },
     {
         "name": "欧乐影院",
@@ -172,7 +172,7 @@
     {
         "name": "奇虎资源",
         "type": 1,
-        "api": "https://caiji.qhzyapi.com/api.php/provide/vod"
+        "api": "https://caiji.qhzyapi.com/api.php/provide/vod/"
     },
     {
         "name": "闪电资源",
@@ -262,7 +262,7 @@
     {
         "name": "种子短剧",
         "type": 1,
-        "api": "https://zzdj.cc/api.php/provide/vod"
+        "api": "https://zzdj.cc/api.php/provide/vod/"
     },
     {
         "name": "最大资源",
