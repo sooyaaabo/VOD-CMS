@@ -244,7 +244,7 @@
             "key": "奈飞狗",
             "name": "奈飞狗",
             "type": 1,
-            "api": "https://netflixdog.club/api.php/provide/vod",
+            "api": "https://netflixdog.club/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -276,7 +276,7 @@
             "key": "奇虎资源",
             "name": "奇虎资源",
             "type": 1,
-            "api": "https://caiji.qhzyapi.com/api.php/provide/vod",
+            "api": "https://caiji.qhzyapi.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
@@ -412,7 +412,7 @@
             "key": "种子短剧",
             "name": "种子短剧",
             "type": 1,
-            "api": "https://zzdj.cc/api.php/provide/vod",
+            "api": "https://zzdj.cc/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1
         },
