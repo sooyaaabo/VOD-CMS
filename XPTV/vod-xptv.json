@@ -1,91 +1,49 @@
 {
     "sites": [
         {
-            "key": "csp_Ddrk",
             "name": "VOD-低端影视",
             "type": 3,
-            "api": "csp_Ddrk",
-            "playerType": "2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1
+            "api": "csp_Ddrk"
         },
         {
-            "key": "Czsapp",
             "name": "VOD-厂长资源",
             "type": 3,
-            "api": "csp_Czsapp",
-            "playerType": 2,
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "ext": "https://czz9.com/"
+            "api": "csp_Czsapp"
         },
         {
-            "key": "csp_Bdys",
             "name": "VOD-哔嘀影视",
             "type": 3,
-            "api": "csp_Bdys",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
+            "api": "csp_Bdys"
         },
         {
-            "key": "Olevod",
             "name": "VOD-欧乐影院",
             "type": 3,
-            "api": "csp_Olevod",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
+            "api": "csp_Olevod"
         },
         {
-            "key": "csp_Zxzj",
             "name": "VOD-在线之家",
             "type": 3,
-            "api": "csp_Zxzj",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "ext": "https://www.zxzja.com/"
+            "api": "csp_Zxzj"
         },
         {
-            "key": "csp_age",
             "name": "VOD-AGE动漫",
             "type": 3,
-            "api": "csp_age",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
+            "api": "csp_age"
         },
         {
-            "key": "csp_girlgirllove",
             "name": "VOD-ギリギリ动漫",
             "type": 3,
-            "api": "csp_girlgirllove",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
+            "api": "csp_girlgirllove"
         },
         {
-            "key": "csp_libvio",
             "name": "VOD-LIBVIO",
             "type": 3,
-            "api": "csp_libvio",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1
+            "api": "csp_libvio"
         },
         {
-            "key": "csp_duboku",
             "name": "VOD-独播库",
             "type": 3,
-            "api": "csp_duboku",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1
+            "api": "csp_duboku"
         }
     ]
 }
