@@ -2,7 +2,7 @@
     "sites": [
         {
             "key": "360资源",
-            "name": "CMS-CMS-360资源",
+            "name": "CMS-360资源",
             "type": 1,
             "api": "https://360zy.com/api.php/provide/vod/",
             "searchable": 1,
