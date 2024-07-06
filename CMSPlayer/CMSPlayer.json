@@ -4,7 +4,7 @@
         "api": "https://360zy.com/api.php/provide/vod/"
     },
     {
-        "name": "39影視",
+        "name": "39影视",
         "api": "https://www.39kan.com/api.php/provide/vod/"
     },
     {
@@ -56,10 +56,6 @@
         "api": "https://api.guangsuapi.com/api.php/provide/vod/"
     },
     {
-        "name": "海外吧",
-        "api": "https://hw8.live/api.php/provide/vod/",
-    },
-    {
         "name": "海外看",
         "api": "https://haiwaikan.com/api.php/provide/vod/"
     },
@@ -78,6 +74,10 @@
     {
         "name": "虎牙资源",
         "api": "https://www.huyaapi.com/api.php/provide/vod/"
+    },
+    {
+        "name": "华为吧",
+        "api": "https://hw8.live/api.php/provide/vod/"
     },
     {
         "name": "火狐资源",

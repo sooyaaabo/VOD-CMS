@@ -81,11 +81,6 @@
             "api": "https://api.guangsuapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-海外吧",
-            "type": 1,
-            "api": "https://hw8.live/api.php/provide/vod/"
-        },
-        {
             "name": "CMS-海外看",
             "type": 1,
             "api": "https://haiwaikan.com/api.php/provide/vod/"
@@ -109,6 +104,11 @@
             "name": "CMS-虎牙资源",
             "type": 1,
             "api": "https://www.huyaapi.com/api.php/provide/vod/"
+        },
+        {
+            "name": "CMS-华为吧",
+            "type": 1,
+            "api": "https://hw8.live/api.php/provide/vod/"
         },
         {
             "name": "CMS-火狐资源",
