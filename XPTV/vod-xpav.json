@@ -2,7 +2,7 @@
     "sites": [
         {
             "key": "csp_Missav",
-            "name": "🟣MISSAV",
+            "name": "VOD-MISSAV",
             "type": 3,
             "api": "csp_Missav",
             "searchable": 1,

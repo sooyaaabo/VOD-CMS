@@ -2,7 +2,7 @@
     "sites": [
         {
             "key": "Gitcafe",
-            "name": "🔵小纸条",
+            "name": "PAN-小纸条",
             "type": 3,
             "api": "csp_Gitcafe",
             "searchable": 1,
@@ -12,7 +12,7 @@
         },
         {
             "key": "csp_WoGG",
-            "name": "🔵玩偶哥哥",
+            "name": "PAN-玩偶哥哥",
             "type": 3,
             "api": "csp_WoGG",
             "searchable": 1,
@@ -20,9 +20,19 @@
             "changeable": 0,
             "ext": "http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd$$$https://api.wogg.xyz/$$$\u5173"
         },
+	{
+            "key": "csp_wobg",
+            "name": "PAN-玩偶表哥",
+            "type": 3,
+            "api": "csp_wobg",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1
+        },
         {
             "key": "csp_pan666",
-            "name": "🔵阿里小站",
+            "name": "PAN-阿里小站",
             "type": 3,
             "api": "csp_pan666",
             "playerType": "2",
@@ -33,7 +43,7 @@
         },
         {
             "key": "csp_yunpan",
-            "name": "🔵云盘资源",
+            "name": "PAN-云盘资源",
             "type": 3,
             "api": "csp_yunpan",
             "playerType": "2",
@@ -41,16 +51,6 @@
             "quickSearch": 1,
             "changeable": 1,
             "ext": "https://yunpan1.cc"
-        },
-        {
-            "key": "csp_wobg",
-            "name": "🔵玩偶表哥",
-            "type": 3,
-            "api": "csp_wobg",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1
         }
     ]
 }

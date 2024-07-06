@@ -2,7 +2,7 @@
     "sites": [
         {
             "key": "csp_Ddrk",
-            "name": "🟢低端影视",
+            "name": "VOD-低端影视",
             "type": 3,
             "api": "csp_Ddrk",
             "playerType": "2",
@@ -12,7 +12,7 @@
         },
         {
             "key": "Czsapp",
-            "name": "🟢厂长资源",
+            "name": "VOD-厂长资源",
             "type": 3,
             "api": "csp_Czsapp",
             "playerType": 2,
@@ -23,7 +23,7 @@
         },
         {
             "key": "csp_Bdys",
-            "name": "🟢哔嘀影视",
+            "name": "VOD-哔嘀影视",
             "type": 3,
             "api": "csp_Bdys",
             "searchable": 1,
@@ -32,7 +32,7 @@
         },
         {
             "key": "Olevod",
-            "name": "🟢欧乐影院",
+            "name": "VOD-欧乐影院",
             "type": 3,
             "api": "csp_Olevod",
             "searchable": 1,
@@ -41,7 +41,7 @@
         },
         {
             "key": "csp_Zxzj",
-            "name": "🟢在线之家",
+            "name": "VOD-在线之家",
             "type": 3,
             "api": "csp_Zxzj",
             "searchable": 1,
@@ -51,7 +51,7 @@
         },
         {
             "key": "csp_age",
-            "name": "🟢AGE动漫",
+            "name": "VOD-AGE动漫",
             "type": 3,
             "api": "csp_age",
             "searchable": 1,
@@ -60,7 +60,7 @@
         },
         {
             "key": "csp_girlgirllove",
-            "name": "🟢ギリギリ动漫",
+            "name": "VOD-ギリギリ动漫",
             "type": 3,
             "api": "csp_girlgirllove",
             "searchable": 1,
@@ -69,7 +69,7 @@
         },
         {
             "key": "csp_libvio",
-            "name": "🟢LIBVIO",
+            "name": "VOD-LIBVIO",
             "type": 3,
             "api": "csp_libvio",
             "searchable": 1,
@@ -79,7 +79,7 @@
         },
         {
             "key": "csp_duboku",
-            "name": "🟢独播库",
+            "name": "VOD-独播库",
             "type": 3,
             "api": "csp_duboku",
             "searchable": 1,
