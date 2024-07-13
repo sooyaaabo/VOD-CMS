@@ -65,7 +65,7 @@
     },
     {
         "name": "黑木耳",
-        "api": "https://www.heimuer.tv/api.php/provide/vod/"
+        "api": "https://json.heimuer.xyz/api.php/provide/vod/"
     },
     {
         "name": "红牛资源",

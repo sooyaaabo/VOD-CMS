@@ -93,7 +93,7 @@
         {
             "name": "CMS-黑木耳",
             "type": 1,
-            "api": "https://www.heimuer.tv/api.php/provide/vod/"
+            "api": "https://json.heimuer.xyz/api.php/provide/vod/"
         },
         {
             "name": "CMS-红牛资源",
