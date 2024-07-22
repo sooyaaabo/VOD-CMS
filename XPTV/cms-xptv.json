@@ -11,6 +11,11 @@
             "api": "https://www.39kan.com/api.php/provide/vod/"
         },
         {
+            "name": "CMS-4K电影馆",
+            "type": 1,
+            "api": "http://4kdyg.fun/api.php/provide/vod/"
+        },
+        {
             "name": "CMS-阿里影视",
             "type": 1,
             "api": "http://aliys.cn:90/api.php/provide/vod/"
@@ -44,6 +49,11 @@
             "name": "CMS-刺桐资源",
             "type": 1,
             "api": "http://ys9.cttv.vip/api.php/provide/vod/"
+        },
+        {
+            "name": "CMS-二次萌影视",
+            "type": 1,
+            "api": "https://www.ecmys.com/api.php/provide/vod/"
         },
         {
             "name": "CMS-飞刀资源",
@@ -211,6 +221,11 @@
             "api": "https://suoniapi.com/api.php/provide/vod/"
         },
         {
+            "name": "CMS-TIMI蓝光",
+            "type": 1,
+            "api": "http://zyz.ikum.cc:1214/api.php/provide/vod/"
+        },
+        {
             "name": "CMS-天空资源1",
             "type": 1,
             "api": "https://api.tiankongapi.com/api.php/provide/vod/"
@@ -254,6 +269,11 @@
             "name": "CMS-映迷资源",
             "type": 1,
             "api": "https://www.inmi.app/api.php/provide/vod/"
+        },
+        {
+            "name": "CMS-影视猫",
+            "type": 1,
+            "api": "http://ysm.tkbot.fun/api.php/provide/vod/"
         },
         {
             "name": "CMS-鱼乐资源",

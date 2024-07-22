@@ -8,6 +8,10 @@
         "api": "https://www.39kan.com/api.php/provide/vod/"
     },
     {
+        "name": "4K电影馆",
+        "api": "http://4kdyg.fun/api.php/provide/vod/"
+    },
+    {
         "name": "艾旦影视",
         "api": "https://lovedan.net/api.php/provide/vod/"
     },
@@ -30,6 +34,10 @@
     {
         "name": "低端影视",
         "api": "https://ddys.pro/api.php/provide/vod/"
+    },
+    {
+        "name": "二次萌影视",
+        "api": "https://www.ecmys.com/api.php/provide/vod/"
     },
     {
         "name": "非凡资源",
@@ -160,6 +168,10 @@
         "api": "https://suoniapi.com/api.php/provide/vod/"
     },
     {
+        "name": "TIMI蓝光",
+        "api": "http://zyz.ikum.cc:1214/api.php/provide/vod/"
+    },
+    {
         "name": "天空资源1",
         "api": "https://api.tiankongapi.com/api.php/provide/vod/"
     },
@@ -198,6 +210,10 @@
     {
         "name": "映迷资源",
         "api": "https://www.inmi.app/api.php/provide/vod/"
+    },
+    {
+        "name": "影视猫",
+        "api": "http://ysm.tkbot.fun/api.php/provide/vod/"
     },
     {
         "name": "鱼乐资源",
