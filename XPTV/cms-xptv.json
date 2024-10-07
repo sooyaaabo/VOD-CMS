@@ -91,11 +91,6 @@
             "api": "https://api.guangsuapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-海外看",
-            "type": 1,
-            "api": "https://haiwaikan.com/api.php/provide/vod/"
-        },
-        {
             "name": "CMS-豪华资源",
             "type": 1,
             "api": "https://hhzyapi.com/api.php/provide/vod/"
@@ -116,7 +111,7 @@
             "api": "https://www.huyaapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-华为吧",
+            "name": "CMS-海外吧",
             "type": 1,
             "api": "https://hw8.live/api.php/provide/vod/"
         },
@@ -179,6 +174,11 @@
             "name": "CMS-奈飞狗",
             "type": 1,
             "api": "https://netflixdog.club/api.php/provide/vod/"
+        },
+        {
+            "name": "CMS-OK影视",
+            "type": 1,
+            "api": "https://okzyw9.com/api.php/provide/vod/"
         },
         {
             "name": "CMS-飘花影院",
@@ -274,6 +274,11 @@
             "name": "CMS-影视猫",
             "type": 1,
             "api": "http://ysm.tkbot.fun/api.php/provide/vod/"
+        },
+        {
+            "name": "CMS-影图",
+            "type": 1,
+            "api": "http://cj.vodimg.top/api.php/provide/vod/"
         },
         {
             "name": "CMS-鱼乐资源",
