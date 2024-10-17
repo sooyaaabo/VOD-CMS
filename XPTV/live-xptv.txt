@@ -1,0 +1,16 @@
+{
+    "sites": [
+        {
+            "name": "LIVE(β)-Youtube",
+            "type": 3,
+            "api": "csp_youtube",
+            "ext": "https://gist.githubusercontent.com/Yswag/98b86b68755f698e2f601962f76c036a/raw/you.js"
+        },
+        {
+            "name": "LIVE(β)-nmlive",
+            "type": 3,
+            "api": "csp_nmlive",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nmlive.js"
+        }
+    ]
+}
