@@ -66,6 +66,12 @@
             "type": 3,
             "api": "csp_mihdr",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
+        },
+        {
+            "name": "PAN(β)-正奕",
+            "type": 3,
+            "api": "csp_wobgg",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/wobg.js"
         }
     ]
 }
