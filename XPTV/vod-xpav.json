@@ -27,6 +27,12 @@
             "ext2": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hanime.js"
         },
         {
+            "name": "VOD(β)-SupJav",
+            "type": 3,
+            "api": "csp_SupJav",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
+        },
+        {
             "name": "VOD(β)-秋名山见(Live)",
             "type": 3,
             "api": "csp_harunasan",
