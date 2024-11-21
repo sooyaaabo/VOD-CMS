@@ -43,6 +43,12 @@
             "api": "csp_labi",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/labipan.js"
         },
+	{
+            "name": "PAN(β)-雷鲸",
+            "type": 3,
+            "api": "csp_leijing",
+            "ext": "https://gist.githubusercontent.com/occupy-pluto/d9bd7dc541a10681870c7bc76fe8f12a/raw/b5866bf8430336cb8eedef269a752b61a8804645/lei_189.js"
+        },
         {
             "name": "PAN(β)-木偶哥哥",
             "type": 3,
@@ -66,12 +72,6 @@
             "type": 3,
             "api": "csp_mihdr",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
-        },
-        {
-            "name": "PAN(β)-正奕",
-            "type": 3,
-            "api": "csp_wobgg",
-            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/wobg.js"
         }
     ]
 }
