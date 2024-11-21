@@ -1,11 +1,6 @@
 {
     "sites": [
         {
-            "name": "PAN-小纸条",
-            "type": 3,
-            "api": "csp_Gitcafe"
-        },
-        {
             "name": "PAN-玩偶哥哥",
             "type": 3,
             "api": "csp_WoGG"
