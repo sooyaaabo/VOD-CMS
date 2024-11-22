@@ -6,6 +6,12 @@
             "api": "csp_Missav"
         },
         {
+            "name": "VOD(β)-MISSAV",
+            "type": 3,
+            "api": "csp_miss",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
+        },
+        {
             "name": "VOD(β)-麻豆社",
             "type": 3,
             "api": "csp_madou",
@@ -20,11 +26,29 @@
             "ext2": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hkdoll.js"
         },
         {
+            "name": "VOD(β)-91Jav (无海报)",
+            "type": 3,
+            "api": "csp_91jav",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
+        },
+        {
             "name": "VOD(β)-Hanime",
             "type": 3,
             "api": "csp_Hanime1",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hanime.js",
             "ext2": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hanime.js"
+        },
+        {
+            "name": "VOD(β)-HOHOJ",
+            "type": 3,
+            "api": "csp_hohoj",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hohoj.js"
+        },
+        {
+            "name": "VOD(β)-KoreaPornMovie",
+            "type": 3,
+            "api": "csp_KPM",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
         },
         {
             "name": "VOD(β)-SupJav",
