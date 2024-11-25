@@ -1,11 +1,10 @@
 {
     "sites": [
-        { 
-            "name": "VOD(β)-低端影视", 
-            "type": 3, 
+        {
+            "name": "VOD(β)-低端影视",
+            "type": 3,
             "api": "csp_ddys",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ddys.js",
-            "ext2": "https://gist.githubusercontent.com/occupy-pluto/06ace7797b4c2727430a98657fff424f/raw/458c6aed5fb63a391913f52efd74e34d53146730/ddys.js",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ddys.js"
         },
         {
             "name": "VOD-厂长资源",
@@ -34,12 +33,12 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/age.js",
             "ext2": "https://gist.githubusercontent.com/occupy-pluto/e3a7bb98d5027d0f6dfa85fc2ac11a78/raw/d2656fa8fb51dbe5239f688ea36422f9bf8a0457/agedm.js"
         },
-        { 
-            "name": "VOD(β)-ギリギリ动漫", 
-            "type": 3, 
+        {
+            "name": "VOD(β)-ギリギリ动漫",
+            "type": 3,
             "api": "csp_ai",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ai.js",
-            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/72a08d19b0df289e749f3534e7a012e1d9e126f4/girl.js",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ai.js",
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/72a08d19b0df289e749f3534e7a012e1d9e126f4/girl.js"
         },
         {
             "name": "VOD-LIBVIO",
@@ -47,9 +46,11 @@
             "api": "csp_libvio"
         },
         {
-            "name": "VOD-独播库",
+            "name": "VOD(β)-独播库",
             "type": 3,
-            "api": "csp_duboku"
+            "api": "csp_duboku",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/duboku.js",
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/f6cf4425bf7d1815a26323ade89ea593/raw/e681ea88557c1bf71f328665375ba392bf3955cd/duboku.js"
         },
         {
             "name": "VOD(β)-4k-av",
