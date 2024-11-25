@@ -1,9 +1,11 @@
 {
     "sites": [
-        {
-            "name": "VOD-低端影视",
-            "type": 3,
-            "api": "csp_Ddrk"
+        { 
+            "name": "VOD(β)-低端影视", 
+            "type": 3, 
+            "api": "csp_ddys",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ddys.js",
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/06ace7797b4c2727430a98657fff424f/raw/458c6aed5fb63a391913f52efd74e34d53146730/ddys.js",
         },
         {
             "name": "VOD-厂长资源",
@@ -26,15 +28,18 @@
             "api": "csp_Zxzj"
         },
         {
-            "name": "VOD-AGE动漫",
+            "name": "VOD(β)-AGE动漫",
             "type": 3,
             "api": "csp_age",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/age.js"
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/age.js",
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/e3a7bb98d5027d0f6dfa85fc2ac11a78/raw/d2656fa8fb51dbe5239f688ea36422f9bf8a0457/agedm.js"
         },
-        {
-            "name": "VOD-ギリギリ动漫",
-            "type": 3,
-            "api": "csp_girlgirllove"
+        { 
+            "name": "VOD(β)-ギリギリ动漫", 
+            "type": 3, 
+            "api": "csp_ai",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/ai.js",
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/72a08d19b0df289e749f3534e7a012e1d9e126f4/girl.js",
         },
         {
             "name": "VOD-LIBVIO",
