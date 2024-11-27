@@ -1,7 +1,7 @@
 {
     "sites": [
         {
-            "name": "PAN(β)-玩偶哥哥",
+            "name": "PAN-玩偶哥哥",
             "type": 3,
             "api": "csp_wogg",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/wogg.js"
@@ -22,55 +22,55 @@
             "api": "csp_wobg"
         },
         {
-            "name": "PAN(β)-南风短剧",
+            "name": "PAN-南风短剧",
             "type": 3,
             "api": "csp_nanfdj",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nanfdj.js"
         },
         {
-            "name": "PAN(β)-多多影音",
+            "name": "PAN-多多影音",
             "type": 3,
             "api": "csp_yydsys",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yydsys.js"
         },
         {
-            "name": "PAN(β)-蜡笔盘",
+            "name": "PAN-蜡笔盘",
             "type": 3,
             "api": "csp_labi",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/labipan.js"
         },
         {
-            "name": "PAN(β)-雷鲸",
+            "name": "PAN-雷鲸",
             "type": 3,
             "api": "csp_leijing",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/leijing.js"
         },
         {
-            "name": "PAN(β)-木偶哥哥",
+            "name": "PAN-木偶哥哥",
             "type": 3,
             "api": "csp_muou",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/muou.js"
         },
         {
-            "name": "PAN(β)-校长影视",
+            "name": "PAN-校长影视",
             "type": 3,
             "api": "csp_xzys",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xzys.js"
         },
         {
-            "name": "PAN(β)-云盘吧",
+            "name": "PAN-云盘吧",
             "type": 3,
             "api": "csp_yunpan8",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yunpan8.js"
         },
         {
-            "name": "PAN(β)-云盘资源网",
+            "name": "PAN-云盘资源网",
             "type": 3,
             "api": "csp_yunpanres",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yunpanres.js"
         },
         {
-            "name": "PAN(β)-至臻视觉",
+            "name": "PAN-至臻视觉",
             "type": 3,
             "api": "csp_mihdr",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
