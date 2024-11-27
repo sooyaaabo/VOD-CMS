@@ -74,6 +74,12 @@
             "type": 3,
             "api": "csp_mihdr",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
+        },
+        {
+            "name": "PAN-欧歌",
+            "type": 3,
+            "api": "csp_ouge",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ouge.js"
         }
     ]
 }
