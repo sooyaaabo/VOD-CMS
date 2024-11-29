@@ -56,14 +56,6 @@
         "quickSearch": 1
     },
     {
-        "key": "皇冠资源",
-        "name": "皇冠资源(切)",
-        "type": 1,
-        "api": "https://hghhh.com/api.php/provide/vod/at/xml",
-        "searchable": 1,
-        "quickSearch": 1
-    },
-    {
         "key": "森林资源",
         "name": "森林资源(切)",
         "type": 1,
@@ -296,26 +288,10 @@
         "quickSearch": 1
     },
     {
-        "key": "麻豆视频",
-        "name": "麻豆视频(切)",
-        "type": 1,
-        "api": "http://www.madouse.la/api.php/provide/vod/at/xml",
-        "searchable": 1,
-        "quickSearch": 1
-    },
-    {
         "key": "蛋蛋视频",
         "name": "蛋蛋视频(切)",
         "type": 1,
         "api": "http://156.249.29.8/inc/api.php",
-        "searchable": 1,
-        "quickSearch": 1
-    },
-    {
-        "key": "91麻豆",
-        "name": "91麻豆(切)",
-        "type": 1,
-        "api": "https://91md.me/api.php/provide/vod/at/xml",
         "searchable": 1,
         "quickSearch": 1
     },
@@ -348,14 +324,6 @@
         "name": "鲨鱼资源(切)",
         "type": 1,
         "api": "https://shayuapi.com/api.php/provide/vod/at/xml",
-        "searchable": 1,
-        "quickSearch": 1
-    },
-    {
-        "key": "KK写真资源",
-        "name": "KK写真资源(切)",
-        "type": 1,
-        "api": "https://kkzy.me/api.php/provide/vod/at/xml",
         "searchable": 1,
         "quickSearch": 1
     },
