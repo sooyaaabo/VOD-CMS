@@ -32,6 +32,12 @@
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
         },
         {
+            "name": "VOD-AV Today",
+            "type": 3,
+            "api": "csp_avtoday",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avtoday.js"
+        },
+        {
             "name": "VOD-Hanime",
             "type": 3,
             "api": "csp_Hanime1",
@@ -57,10 +63,22 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
         },
         {
+            "name": "VOD-Pornhub",
+            "type": 3,
+            "api": "csp_pornhub",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/pornhub.js"
+        },
+        {
             "name": "VOD-SupJav",
             "type": 3,
             "api": "csp_SupJav",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
+        },
+        {
+            "name": "VOD-XHAMSTER",
+            "type": 3,
+            "api": "csp_xhamster",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
         },
         {
             "name": "VOD-秋名山见(Live)",
