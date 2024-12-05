@@ -1,21 +1,6 @@
 {
     "sites": [
         {
-            "name": "VOD-厂长资源",
-            "type": 3,
-            "api": "csp_Czsapp"
-        },
-        {
-            "name": "VOD-绝缘影视",
-            "type": 3,
-            "api": "csp_Bdys"
-        },
-        {
-            "name": "VOD-欧乐影院",
-            "type": 3,
-            "api": "csp_Olevod"
-        },
-        {
             "name": "VOD-在线之家",
             "type": 3,
             "api": "csp_Zxzj"
@@ -44,25 +29,31 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ddys.js"
         },
         {
+            "name": "VOD-欧乐影院",
+            "type": 3,
+            "api": "csp_Olevod",
+           "ext": "https://gist.githubusercontent.com/occupy-pluto/ce9bf8248a15acb87e6b55e382fb8e4b/raw/ole.js"
+        },
+        {
             "name": "VOD-AGE动漫",
             "type": 3,
             "api": "csp_age",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/age.js",
-            "ext2": "https://gist.githubusercontent.com/occupy-pluto/e3a7bb98d5027d0f6dfa85fc2ac11a78/raw/d2656fa8fb51dbe5239f688ea36422f9bf8a0457/agedm.js"
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/e3a7bb98d5027d0f6dfa85fc2ac11a78/raw/agedm.js"
         },
         {
             "name": "VOD-ギリギリ动漫",
             "type": 3,
             "api": "csp_ai",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ai.js",
-            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/72a08d19b0df289e749f3534e7a012e1d9e126f4/girl.js"
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/5185fa59944d5b8af625b2c83604d397/raw/girl.js"
         },
         {
             "name": "VOD-独播库",
             "type": 3,
             "api": "csp_duboku",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/duboku.js",
-            "ext2": "https://gist.githubusercontent.com/occupy-pluto/f6cf4425bf7d1815a26323ade89ea593/raw/e681ea88557c1bf71f328665375ba392bf3955cd/duboku.js"
+            "ext2": "https://gist.githubusercontent.com/occupy-pluto/f6cf4425bf7d1815a26323ade89ea593/raw/duboku.js"
         },
         {
             "name": "VOD-4k-av",
