@@ -14,9 +14,9 @@
 
 > [!IMPORTANT]
 > 
-> - 本仓库内容基于 **[Yswag/xptv-extensions](https://github.com/Yswag/xptv-extensions)** 和 **[fangkuia/XPTV](https://github.com/fangkuia/XPTV)** 进行整合与修改。**建议优先使用原作者的仓库内容。**
+> - 本仓库内容基于 **[Yswag/xptv-extensions](https://github.com/Yswag/xptv-extensions)** 和 **[fangkuia/XPTV](https://github.com/fangkuia/XPTV)** 进行整合修改。**建议优先使用原作者的仓库内容。**
 >
-> - **衷心感谢各位原作者的辛勤付出，尊重每位创作者的劳动成果。**
+> - 衷心感谢各位原作者的辛勤付出，**尊重每位创作者的劳动成果**。
 > 
 > - **使用时请严格遵循原作者的使用要求和许可协议**，如有任何疑问，请联系原作者进行确认。
 >
