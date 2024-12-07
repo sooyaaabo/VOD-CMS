@@ -1,297 +1,297 @@
 {
     "sites": [
         {
-            "name": "CMS-360资源",
+            "name": "TV-360资源",
             "type": 1,
             "api": "https://360zy.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-39影视",
+            "name": "TV-39影视",
             "type": 1,
             "api": "https://www.39kan.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-4K电影馆",
+            "name": "TV-4K电影馆",
             "type": 1,
             "api": "http://4kdyg.fun/api.php/provide/vod/"
         },
         {
-            "name": "CMS-阿里影视",
+            "name": "TV-阿里影视",
             "type": 1,
             "api": "http://aliys.cn:90/api.php/provide/vod/"
         },
         {
-            "name": "CMS-艾旦影视",
+            "name": "TV-艾旦影视",
             "type": 1,
             "api": "https://lovedan.net/api.php/provide/vod/"
         },
         {
-            "name": "CMS-爱酷资源",
+            "name": "TV-爱酷资源",
             "type": 1,
             "api": "https://cj.json.icu/aiku.php/provide/vod/"
         },
         {
-            "name": "CMS-八戒资源",
+            "name": "TV-八戒资源",
             "type": 1,
             "api": "http://cj.bajiecaiji.com/inc/apijson_vod.php"
         },
         {
-            "name": "CMS-百度云资源",
+            "name": "TV-百度云资源",
             "type": 1,
             "api": "https://api.apibdzy.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-暴风资源",
+            "name": "TV-暴风资源",
             "type": 1,
             "api": "https://bfzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-刺桐资源",
+            "name": "TV-刺桐资源",
             "type": 1,
             "api": "http://ys9.cttv.vip/api.php/provide/vod/"
         },
         {
-            "name": "CMS-二次萌影视",
+            "name": "TV-二次萌影视",
             "type": 1,
             "api": "https://www.ecmys.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-飞刀资源",
+            "name": "TV-飞刀资源",
             "type": 1,
             "api": "http://www.feidaozy.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-非凡资源",
+            "name": "TV-非凡资源",
             "type": 1,
             "api": "https://cj.ffzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-飞速资源1",
+            "name": "TV-飞速资源1",
             "type": 1,
             "api": "https://www.feisuzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-飞速资源2",
+            "name": "TV-飞速资源2",
             "type": 1,
             "api": "https://fszy1.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-飞速资源3",
+            "name": "TV-飞速资源3",
             "type": 1,
             "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-官网资源",
+            "name": "TV-官网资源",
             "type": 1,
             "api": "http://gwcms.cttv.vip/api.php/provide/vod/"
         },
         {
-            "name": "CMS-光速资源",
+            "name": "TV-光速资源",
             "type": 1,
             "api": "https://api.guangsuapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-豪华资源",
+            "name": "TV-豪华资源",
             "type": 1,
             "api": "https://hhzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-黑木耳",
+            "name": "TV-黑木耳",
             "type": 1,
             "api": "https://json.heimuer.xyz/api.php/provide/vod/"
         },
         {
-            "name": "CMS-红牛资源",
+            "name": "TV-红牛资源",
             "type": 1,
             "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-虎牙资源",
+            "name": "TV-虎牙资源",
             "type": 1,
             "api": "https://www.huyaapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-海外吧",
+            "name": "TV-海外吧",
             "type": 1,
             "api": "https://hw8.live/api.php/provide/vod/"
         },
         {
-            "name": "CMS-火狐资源",
+            "name": "TV-火狐资源",
             "type": 1,
             "api": "https://hhzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-ikun资源",
+            "name": "TV-ikun资源",
             "type": 1,
             "api": "https://ikunzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-极速资源",
+            "name": "TV-极速资源",
             "type": 1,
             "api": "https://jszyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-金鹰资源",
+            "name": "TV-金鹰资源",
             "type": 1,
             "api": "https://jyzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-快车资源",
+            "name": "TV-快车资源",
             "type": 1,
             "api": "https://caiji.kczyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-快看资源",
+            "name": "TV-快看资源",
             "type": 1,
             "api": "https://kuaikan-api.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-快云资源",
+            "name": "TV-快云资源",
             "type": 1,
             "api": "https://www.kuaiyunzy.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-量子资源",
+            "name": "TV-量子资源",
             "type": 1,
             "api": "https://cj.lziapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-每天资源",
+            "name": "TV-每天资源",
             "type": 1,
             "api": "http://47.113.126.237:1234/api.php/provide/vod/"
         },
         {
-            "name": "CMS-墨斗资源",
+            "name": "TV-墨斗资源",
             "type": 1,
             "api": "https://www.mdzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-魔都动漫",
+            "name": "TV-魔都动漫",
             "type": 1,
             "api": "https://caiji.moduapi.cc/api.php/provide/vod/"
         },
         {
-            "name": "CMS-奈飞狗",
+            "name": "TV-奈飞狗",
             "type": 1,
             "api": "https://netflixdog.club/api.php/provide/vod/"
         },
         {
-            "name": "CMS-OK影视",
+            "name": "TV-OK影视",
             "type": 1,
             "api": "https://okzyw9.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-飘花影院",
+            "name": "TV-飘花影院",
             "type": 1,
             "api": "https://www.ahjiuman.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-飘零资源",
+            "name": "TV-飘零资源",
             "type": 1,
             "api": "https://p2100.net/api.php/provide/vod/"
         },
         {
-            "name": "CMS-奇虎资源",
+            "name": "TV-奇虎资源",
             "type": 1,
             "api": "https://caiji.qhzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-闪电资源",
+            "name": "TV-闪电资源",
             "type": 1,
             "api": "http://sdzyapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-四九资源",
+            "name": "TV-四九资源",
             "type": 1,
             "api": "https://49zyw.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-私密影院",
+            "name": "TV-私密影院",
             "type": 1,
             "api": "https://simiyy.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-速播资源",
+            "name": "TV-速播资源",
             "type": 1,
             "api": "https://subocaiji.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-索尼资源",
+            "name": "TV-索尼资源",
             "type": 1,
             "api": "https://suoniapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-TIMI蓝光",
+            "name": "TV-TIMI蓝光",
             "type": 1,
             "api": "http://zyz.ikum.cc:1214/api.php/provide/vod/"
         },
         {
-            "name": "CMS-天空资源1",
+            "name": "TV-天空资源1",
             "type": 1,
             "api": "https://api.tiankongapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-天空资源2",
+            "name": "TV-天空资源2",
             "type": 1,
             "api": "https://m3u8.tiankongapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-天翼资源",
+            "name": "TV-天翼资源",
             "type": 1,
             "api": "https://www.911ysw.top/tianyi.php/provide/vod/"
         },
         {
-            "name": "CMS-U酷资源",
+            "name": "TV-U酷资源",
             "type": 1,
             "api": "https://api.ukuapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-卧龙资源",
+            "name": "TV-卧龙资源",
             "type": 1,
             "api": "https://collect.wolongzy.cc/api.php/provide/vod/"
         },
         {
-            "name": "CMS-无尽资源",
+            "name": "TV-无尽资源",
             "type": 1,
             "api": "https://api.wujinapi.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-新浪资源",
+            "name": "TV-新浪资源",
             "type": 1,
             "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
         },
         {
-            "name": "CMS-樱花资源",
+            "name": "TV-樱花资源",
             "type": 1,
             "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/"
         },
         {
-            "name": "CMS-映迷资源",
+            "name": "TV-映迷资源",
             "type": 1,
             "api": "https://www.inmi.app/api.php/provide/vod/"
         },
         {
-            "name": "CMS-影视猫",
+            "name": "TV-影视猫",
             "type": 1,
             "api": "http://ysm.tkbot.fun/api.php/provide/vod/"
         },
         {
-            "name": "CMS-影图",
+            "name": "TV-影图",
             "type": 1,
             "api": "http://cj.vodimg.top/api.php/provide/vod/"
         },
         {
-            "name": "CMS-鱼乐资源",
+            "name": "TV-鱼乐资源",
             "type": 1,
             "api": "https://api.ylzy.me/api.php/provide/vod/"
         },
         {
-            "name": "CMS-种子短剧",
+            "name": "TV-种子短剧",
             "type": 1,
             "api": "https://zzdj.cc/api.php/provide/vod/"
         },
         {
-            "name": "CMS-最大资源",
+            "name": "TV-最大资源",
             "type": 1,
             "api": "https://api.zuidapi.com/api.php/provide/vod/"
         }

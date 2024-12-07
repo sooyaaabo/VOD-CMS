@@ -1,93 +1,85 @@
 {
     "sites": [
         {
-            "name": "VOD-MISSAV",
-            "type": 3,
-            "api": "csp_Missav"
-        },
-        {
-            "name": "VOD-MISSAV",
-            "type": 3,
-            "api": "csp_miss",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
-        },
-        {
-            "name": "VOD-麻豆社",
-            "type": 3,
-            "api": "csp_madou",
-            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/madou.js",
-            "ext2": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/madou.js"
-        },
-        {
-            "name": "VOD-玩偶姐姐",
-            "type": 3,
-            "api": "csp_hkdoll",
-            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hkdoll.js",
-            "ext2": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hkdoll.js"
-        },
-        {
-            "name": "VOD-91Jav (无海报)",
+            "name": "AV-91Jav (无海报)",
             "type": 3,
             "api": "csp_91jav",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
         },
         {
-            "name": "VOD-AV Today",
+            "name": "AV-AV Today",
             "type": 3,
             "api": "csp_avtoday",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avtoday.js"
         },
         {
-            "name": "VOD-Hanime",
+            "name": "AV-Hanime",
             "type": 3,
             "api": "csp_Hanime1",
-            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hanime.js",
-            "ext2": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hanime.js"
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/tv/js/hanime.js"
         },
         {
-            "name": "VOD-HOHOJ",
+            "name": "AV-HOHOJ",
             "type": 3,
             "api": "csp_hohoj",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hohoj.js"
         },
         {
-            "name": "VOD-JableTV",
+            "name": "AV-JableTV",
             "type": 3,
             "api": "csp_jable",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jable.js"
         },
         {
-            "name": "VOD-KoreaPornMovie",
+            "name": "AV-KoreaPornMovie",
             "type": 3,
             "api": "csp_KPM",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
         },
         {
-            "name": "VOD-pppHub",
+            "name": "AV-MISSAV",
             "type": 3,
-            "api": "csp_ppron",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
+            "api": "csp_miss",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
         },
         {
-            "name": "VOD-Pornhub",
+            "name": "AV-Pornhub",
             "type": 3,
             "api": "csp_pornhub",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/pornhub.js"
         },
         {
-            "name": "VOD-SupJav",
+            "name": "AV-pppHub",
+            "type": 3,
+            "api": "csp_ppron",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
+        },
+        {
+            "name": "AV-SupJav",
             "type": 3,
             "api": "csp_SupJav",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
         },
         {
-            "name": "VOD-XHAMSTER",
+            "name": "AV-XHAMSTER",
             "type": 3,
             "api": "csp_xhamster",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
         },
         {
-            "name": "VOD-秋名山见(Live)",
+            "name": "AV-麻豆社",
+            "type": 3,
+            "api": "csp_madou",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/madou.js"
+        },
+        {
+            "name": "AV-玩偶姐姐",
+            "type": 3,
+            "api": "csp_hkdoll",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hkdoll.js"
+        },
+        {
+            "name": "AV-秋名山见(Live)",
             "type": 3,
             "api": "csp_harunasan",
             "ext": "https://gist.githubusercontent.com/Yswag/d9f072b75dab5b1b107c523dd148eea3/raw/harunasan.js"
