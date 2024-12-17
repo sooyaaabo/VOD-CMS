@@ -13,19 +13,19 @@
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avtoday.js"
         },
         {
-            "name": "AV-Hanime",
+            "name": "AV-Hanime1",
             "type": 3,
             "api": "csp_Hanime1",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hanime.js"
         },
         {
-            "name": "AV-HOHOJ",
+            "name": "AV-HoHoJ",
             "type": 3,
             "api": "csp_hohoj",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hohoj.js"
         },
         {
-            "name": "AV-JableTV",
+            "name": "AV-Jable",
             "type": 3,
             "api": "csp_jable",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jable.js"
@@ -37,7 +37,7 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
         },
         {
-            "name": "AV-MISSAV",
+            "name": "AV-MissAV",
             "type": 3,
             "api": "csp_miss",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
@@ -49,7 +49,7 @@
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/pornhub.js"
         },
         {
-            "name": "AV-pppHub",
+            "name": "AV-PPP Porn",
             "type": 3,
             "api": "csp_ppron",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
@@ -61,7 +61,7 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
         },
         {
-            "name": "AV-XHAMSTER",
+            "name": "AV-xHamster",
             "type": 3,
             "api": "csp_xhamster",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
@@ -85,7 +85,7 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/rou.js"
         },
         {
-            "name": "AV-桃花族",
+            "name": "AV-黄色仓库",
             "type": 3,
             "api": "csp_taohuazu",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/taohuazu.js"
