@@ -1,6 +1,12 @@
 {
     "sites": [
         {
+            "name": "PAN-奥秘",
+            "type": 3,
+            "api": "csp_aomi",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/aomi.js"
+        },
+        {
             "name": "PAN-多多影音",
             "type": 3,
             "api": "csp_yydsys",
@@ -19,6 +25,12 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/leijing.js"
         },
         {
+            "name": "PAN-六趣",
+            "type": 3,
+            "api": "csp_liuqu",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/liuqu.js"
+        },
+        {
             "name": "PAN-木偶",
             "type": 3,
             "api": "csp_muou",
@@ -35,6 +47,12 @@
             "type": 3,
             "api": "csp_ouge",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ouge.js"
+        },
+        {
+            "name": "PAN-闪电UC",
+            "type": 3,
+            "api": "csp_shandian",
+            "ext": "https://gist.githubusercontent.com/fangkuia/096af648e9b0b104a9e226fdca6015b9/raw/shandian.js"
         },
         {
             "name": "PAN-玩偶哥哥",
