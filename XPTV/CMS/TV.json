@@ -246,6 +246,11 @@
             "api": "https://api.ukuapi.com/api.php/provide/vod/"
         },
         {
+            "name": "TV-旺旺资源",
+            "type": 1,
+            "api": "https://api.wwzy.tv/api.php/provide/vod/"
+        },
+        {
             "name": "TV-卧龙资源",
             "type": 1,
             "api": "https://collect.wolongzy.cc/api.php/provide/vod/"
