@@ -1,10 +1,16 @@
 {
     "sites": [
         {
-            "name": "PAN-奥秘",
+            "name": "PAN-奥秘影视",
             "type": 3,
             "api": "csp_aomi",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/aomi.js"
+        },
+        {
+            "name": "PAN-白嫖分享",
+            "type": 3,
+            "api": "csp_baipiao",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/baipiao.js" 
         },
         {
             "name": "PAN-多多影音",
@@ -19,13 +25,13 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/labipan.js"
         },
         {
-            "name": "PAN-雷鲸",
+            "name": "PAN-雷鲸小站",
             "type": 3,
             "api": "csp_leijing",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/leijing.js"
         },
         {
-            "name": "PAN-六趣",
+            "name": "PAN-六趣网盘",
             "type": 3,
             "api": "csp_liuqu",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/liuqu.js"
@@ -61,12 +67,6 @@
             "ext": "https://gist.githubusercontent.com/occupy-pluto/ad857b12b6b8adebd99b8de42d87b983/raw/wogg.js"
         },
         {
-            "name": "PAN-小米",
-            "type": 3,
-            "api": "csp_mihdr",
-            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
-        },
-        {
             "name": "PAN-小米UC",
             "type": 3,
             "api": "csp_js/mucpan",
@@ -95,6 +95,12 @@
             "type": 3,
             "api": "csp_yunpanres",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yunpanres.js"
+        },
+        {
+            "name": "PAN-至臻视觉",
+            "type": 3,
+            "api": "csp_mihdr",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
         }
     ]
 }
