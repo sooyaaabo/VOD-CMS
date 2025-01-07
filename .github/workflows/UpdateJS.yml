@@ -2,12 +2,13 @@ name: Update JS Files
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 */2 * * *"
+  # Uncomment the following if you still want a scheduled trigger
+  # schedule:
+  #   - cron: "0 */2 * * *"
 
 permissions:
-  actions: write  
-  contents: write 
+  actions: write
+  contents: write
 
 jobs:
   download-js:
@@ -48,14 +49,14 @@ jobs:
         for js_name in "${!jsfiles[@]}"; do
           url="${jsfiles[$js_name]}"
           curl -A -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
-          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"  # 在文件开头添加原链接
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"
         done
-        
-        - name: Commits
-        run: |
-          cd Loon
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add .
-          git commit -m "Synchronously Update JS files" || echo "No changes to commit"
-          git push
+
+    - name: Commit and push changes
+      working-directory: VOD-CMS
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add XPTV/JS/
+        git commit -m "Synchronously Update JS files" || echo "No changes to commit"
+        git push
