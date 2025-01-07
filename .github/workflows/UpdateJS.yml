@@ -51,11 +51,12 @@ jobs:
           curl -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
           sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"  # 在文件开头添加原链接
         done
-
-    - name: Commit and push changes
-      run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git add VOD-CMS/XPTV/JS/*
-        git commit -m "Synchronously Update JS files"
-        git push
+        
+        - name: Commits
+        run: |
+          cd Loon
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Synchronously Update JS files" || echo "No changes to commit"
+          git push
