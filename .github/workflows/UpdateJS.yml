@@ -20,12 +20,10 @@ jobs:
         repository: sooyaaabo/VOD-CMS
         path: VOD-CMS
 
-    - name: Create target directory
-      run: mkdir -p VOD-CMS/XPTV/JS
-
     - name: Download JS files
       run: |
-        declare -A js=(
+        mkdir -p VOD-CMS/XPTV/JS
+        declare -A jsfiles=(
           [91Jav]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
           [AVDB]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avdb.js"
           [AVToday]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avtoday.js"
@@ -46,8 +44,9 @@ jobs:
           [UAA]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/uua.js"
           [harunasan]="https://gist.githubusercontent.com/Yswag/d9f072b75dab5b1b107c523dd148eea3/raw/harunasan.js"
         )
-        for js_name in "${!js[@]}"; do
-          url="${js[$js_name]}"
+        
+        for js_name in "${!jsfiles[@]}"; do
+          url="${jsfiles[$js_name]}"
           curl -A -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
           sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"  # 在文件开头添加原链接
         done
