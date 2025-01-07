@@ -113,3 +113,9 @@ jobs:
         git add XPTV/JS/
         git commit -m "Synchronously Update JS files" || echo "No changes to commit"
         git push
+        
+    - name: Clear Workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        retain_days: 0
+        keep_minimum_runs: 12
