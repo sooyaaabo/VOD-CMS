@@ -1,0 +1,61 @@
+name: Update JS Files
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"
+
+permissions:
+  actions: write  
+  contents: write 
+
+jobs:
+  download-js:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        repository: sooyaaabo/VOD-CMS
+        path: VOD-CMS
+
+    - name: Create target directory
+      run: mkdir -p VOD-CMS/XPTV/JS
+
+    - name: Download JS files
+      run: |
+        urls=(
+          [91Jav]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
+          [AVDB]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avdb.js"
+          [AVToday]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avtoday.js"
+          [Hanime1]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hanime.js"
+          [HoHoJ]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hohoj.js"
+          [Jable]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jable.js"
+          [KoreaPornMovie]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
+          [MissAV]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
+          [Pornhub]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/pornhub.js"
+          [PPP.Porn]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
+          [SupJav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
+          [xHamster]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
+          [Huadu]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hdys.js"
+          [Madou]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/madou.js"
+          [Rou]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/rou.js"
+          [Taohuazu]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/taohuazu.js"
+          [HongKongDoll]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hkdoll.js"
+          [UAA]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/uua.js"
+          [harunasan]="https://gist.githubusercontent.com/Yswag/d9f072b75dab5b1b107c523dd148eea3/raw/harunasan.js"
+        )
+        for js_name in "${!js[@]}"; do
+          url="${js[$js_name]}"
+          curl -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
+          sed -i "1s|^|# 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"  # 在文件开头添加原链接
+        done
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add .
+        git commit -m "Synchronously Update JS files"
+        git push
