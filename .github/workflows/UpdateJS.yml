@@ -56,6 +56,6 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add .
+        git add VOD-CMS/XPTV/JS/*
         git commit -m "Synchronously Update JS files"
         git push
