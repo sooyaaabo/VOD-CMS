@@ -20,6 +20,12 @@
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/anfuns.js"
         },
         {
+            "name": "TV-catflix",
+            "type": 3,
+            "api": "csp_catflix",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/catflix.js"
+        }
+        {
             "name": "TV-HDmoli",
             "type": 3,
             "api": "csp_hdmoli",
