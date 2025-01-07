@@ -49,7 +49,7 @@ jobs:
         for js_name in "${!js[@]}"; do
           url="${js[$js_name]}"
           curl -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
-          sed -i "1s|^|# 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"  # 在文件开头添加原链接
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"  # 在文件开头添加原链接
         done
 
     - name: Commit and push changes
