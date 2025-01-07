@@ -1,0 +1,115 @@
+name: Update XPTV JS Files
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"
+
+permissions:
+  actions: write
+  contents: write
+
+jobs:
+  download-js:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        repository: sooyaaabo/VOD-CMS
+        path: VOD-CMS
+
+    - name: Download JS files
+      run: |
+        mkdir -p VOD-CMS/XPTV/JS
+        declare -A jsfiles=(
+          [91jav]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
+          [avdb]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avdb.js"
+          [avtoday]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avtoday.js"
+          [hanime]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hanime.js"
+          [hohoj]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hohoj.js"
+          [jable]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jable.js"
+          [koreapornmovie]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
+          [missav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
+          [pornhub]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/pornhub.js"
+          [ppp]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
+          [supjav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
+          [xhamster]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
+          [hdys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hdys.js"
+          [madou]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/madou.js"
+          [rou]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/rou.js"
+          [taohuazu]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/taohuazu.js"
+          [hkdoll]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hkdoll.js"
+          [uaa]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/uua.js"
+          [harunasan]="https://gist.githubusercontent.com/Yswag/d9f072b75dab5b1b107c523dd148eea3/raw/harunasan.js"
+          [4kav]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/4kav.js"
+          [age]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/age.js",
+          [anfuns]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/anfuns.js"
+          [catflix]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/catflix.js"
+          [hdmoli]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hdmoli.js"
+          [libvio]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/libvio.js",
+          [novipnoad]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/novipnoad.js"
+          [iyftv]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/iyftv.js"
+          [bdys]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/bdys.js"
+          [czzy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/czzy.js"
+          [ddys]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ddys.js"
+          [duboku]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/duboku.js",
+          [duanjutt]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/duanjutt.js"
+          [gzys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/gzys.js"
+          [hjkk]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hjkk.js"
+          [bttwo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/bttwo.js"
+          [jpyy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jpyy.js"
+          [jcy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jcy.js"
+          [ole]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ole.js",
+          [saohuo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/saohuo.js"
+          [subaibai]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/subaibai.js"
+          [tiantian]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/tiantian.js"
+          [apple]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/apple.js"
+          [xingya]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xingya.js"
+          [zxzj]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/zxzj.js",
+          [sgsd]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/sgsd.js"
+          [girigirilove]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ai.js"
+          [nmlive]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nmlive.js"
+          [youtube]="https://gist.githubusercontent.com/Yswag/98b86b68755f698e2f601962f76c036a/raw/you.js"
+          [alist_xiaoya]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/alist_xiaoya.js"
+          [alist_tvbox]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/alist_tvbox.js"
+          [wobg]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/wobg.js"
+                    [aomi]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/aomi.js"
+          [baipiao]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/baipiao.js" 
+          [duoduo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yydsys.js"
+          [guanying]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/guanying.js"
+          [labipan]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/labipan.js"
+          [leijing]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/leijing.js"
+          [liuqu]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/liuqu.js"
+          [muou]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/muou.js"
+          [nanfeng]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nanfdj.js"
+          [ouge]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ouge.js"
+          [seedhub]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/seedhub.js"
+          [shandian]="https://gist.githubusercontent.com/fangkuia/096af648e9b0b104a9e226fdca6015b9/raw/shandian.js"
+          [texiafan]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xiafan.js"
+          [tianyiso]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/tianyiso.js"
+          [wogg]="https://gist.githubusercontent.com/occupy-pluto/ad857b12b6b8adebd99b8de42d87b983/raw/wogg.js"
+          [huban]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/huban.js"
+          [mucpan]="https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/mucpan.js"
+          [xpanpan]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xpanpan.js"
+          [xzys]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xzys.js"
+          [yunpan8]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yunpan8.js"
+          [yunpanres]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yunpanres.js"
+          [mihdr]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"
+        )
+        
+        for js_name in "${!jsfiles[@]}"; do
+          url="${jsfiles[$js_name]}"
+          curl -A -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"
+        done
+
+    - name: Commit and push changes
+      working-directory: VOD-CMS
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add XPTV/JS/
+        git commit -m "Synchronously Update JS files" || echo "No changes to commit"
+        git push
