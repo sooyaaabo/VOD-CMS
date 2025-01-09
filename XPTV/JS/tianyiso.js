@@ -1,4 +1,4 @@
-// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/tianyiso.js
+// 引用链接: https://gist.githubusercontent.com/occupy-pluto/874d9b180bcaff91e2dac06d38ed8474/raw/tianyiso.js
 const cheerio = createCheerio()
 const CryptoJS = createCryptoJS()
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
