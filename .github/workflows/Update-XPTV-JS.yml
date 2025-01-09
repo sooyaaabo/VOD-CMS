@@ -62,6 +62,7 @@ jobs:
           [jpyy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jpyy.js"
           [jcy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jcy.js"
           [ole]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ole.js"
+          [ppxys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/ppxys.js"
           [saohuo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/saohuo.js"
           [subaibai]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/subaibai.js"
           [tiantian]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/tiantian.js"

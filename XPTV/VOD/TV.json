@@ -119,6 +119,12 @@
             "ext2": "https://gist.githubusercontent.com/occupy-pluto/ce9bf8248a15acb87e6b55e382fb8e4b/raw/ole.js"
         },
         {
+            "name": "TV-皮皮虾影视",
+            "type": 3,
+            "api": "csp_ppxys",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/ppxys.js"
+        },
+        {
             "name": "TV-烧火电影",
             "type": 3,
             "api": "csp_saohuo",
