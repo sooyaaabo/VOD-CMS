@@ -72,6 +72,8 @@ $('.topicItem').each((index, each) => {
     
   const href = $(each).find('h2 a').attr('href');
   const title = $(each).find('h2 a').text().trim().replace(/\s+/g, ' ');
+  const match = title.match(/([\u4e00-\u9fa5…？]+\s*[\u4e00-\u9fa5]*)/);
+  const dramaName = match ? match[0] : title; 
   const r = $(each).find('.summary').text();
   const tag = $(each).find('.tag').text();
     
@@ -80,7 +82,7 @@ $('.topicItem').each((index, each) => {
 
   cards.push({
     vod_id: href,
-    vod_name: title,
+    vod_name: dramaName,
     vod_pic: '',
     vod_remarks: '',
     ext: {
@@ -166,6 +168,8 @@ $('.topicItem').each((index, each) => {
   
   const href = $(each).find('h2 a').attr('href');
   const title = $(each).find('h2 a').text().trim().replace(/\s+/g, ' ');
+  const match = title.match(/([\u4e00-\u9fa5…？]+\s*[\u4e00-\u9fa5]*)/);
+  const dramaName = match ? match[0] : title; 
   const r = $(each).find('.summary').text();
   const tag = $(each).find('.tag').text();
     
@@ -174,7 +178,7 @@ $('.topicItem').each((index, each) => {
 
   cards.push({
     vod_id: href,
-    vod_name: title,
+    vod_name: dramaName,
     vod_pic: '',
     vod_remarks: '',
     ext: {
