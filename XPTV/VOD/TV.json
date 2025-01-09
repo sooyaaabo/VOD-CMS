@@ -156,7 +156,7 @@
             "ext2": "https://gist.githubusercontent.com/occupy-pluto/13a199a1a85c619f948d40e6c5a12c21/raw/zxzj.js"
         },
         {
-            "name": "追光影视",
+            "name": "TV-追光影视",
             "type": 3,
             "api": "csp_sgsd",
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/sgsd.js"
