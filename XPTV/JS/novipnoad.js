@@ -1,7 +1,7 @@
 // 引用链接: https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/novipnoad.js
 const cheerio = createCheerio()
 
-const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/604.1.14 (KHTML, like Gecko)'
 
 let appConfig = {
     ver: 1,
