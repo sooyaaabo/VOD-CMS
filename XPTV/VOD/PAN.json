@@ -1,6 +1,12 @@
 {
     "sites": [
         {
+            "name": "PAN-Star2",
+            "type": 3,
+            "api": "csp_star2",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/star2.js" 
+        },
+        {
             "name": "PAN-SeedHub",
             "type": 3,
             "api": "csp_seedhub",
@@ -70,7 +76,7 @@
             "name": "PAN-闪电UC",
             "type": 3,
             "api": "csp_shandian",
-            "ext": "https://gist.githubusercontent.com/fangkuia/096af648e9b0b104a9e226fdca6015b9/raw/shandian.js"
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/shandian.js"
         },
         {
             "name": "PAN-特下饭",
@@ -82,7 +88,7 @@
             "name": "PAN-天逸搜",
             "type": 3,
             "api": "csp_tianyiso",
-            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/tianyiso.js"
+            "ext": "https://gist.githubusercontent.com/occupy-pluto/874d9b180bcaff91e2dac06d38ed8474/raw/tianyiso.js"
         },
         {
             "name": "PAN-玩偶哥哥",
