@@ -13,6 +13,12 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/seedhub.js"
         },
         {
+            "name": "PAN-TG Search",
+            "type": 3,
+            "api": "csp_tgs",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/tgs.js" 
+        },
+        {
             "name": "PAN-奥秘影视",
             "type": 3,
             "api": "csp_aomi",
