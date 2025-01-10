@@ -81,32 +81,27 @@ async function getCards(ext) {
             let remarks = ''
             try {
                 const html = $(element).find('.tgme_widget_message_text').html()
-                html.split('<br>').forEach((e) => {
-                    const titletext = e.trim()
-                    if (/(名称|名字|短剧|资源标题)(：|:)/.test(titletext)) {
-                        title = titletext
-                            .split(/：|:/)[1]
-                            .replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '')
-                            .replace(/【[^】]*】/g, '')
-                            .trim()
-                            .split(/（|\(|\[/)[0]
-                    } else if (/(.+)\s(更新?至|全).*集/.test(titletext)) {
-                        title = titletext.split(' ')[0]
-                        .replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '')
-                        .replace(/【[^】]*】/g, '')
-                    } else if (/S\d+/.test(titletext)) {
-                        title = titletext.split('S')[0]
-                        .replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '')
-                        .replace(/【[^】]*】/g, '')
-                    }
-                })
-                title = title.replace('<b>', '')
+                   html.split('<br>').forEach((e) => {
+                       const titletext = e.trim()
+                       if (/(名称|名字|短剧|资源标题)(：|:)/.test(titletext)) {
+                           title = titletext
+                               .split(/：|:/)[1]
+                               .trim()
+                               .split(/（|\(|\[/)[0]
+                       } else if (/(.+)\s(更新?至|全).*集/.test(titletext)) {
+                           title = titletext.split(' ')[0]
+                       } else if (/S\d+/.test(titletext)) {
+                           title = titletext.split('S')[0]
+                       }
+                   })
+                   title = title.replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '').replace(/【[^】]*】/g, '')
+
 
                 $(element)
                     .find('.tgme_widget_message_text > a')
                     .each((_, element) => {
                         const href = $(element).attr('href').replace('anxia.com', '115.com')
-                        if (href.match(/https:\/\/(.+)\/s\/(.+)/)) {
+                        if (href.match(/https:\/\/(.+)\/(s|t)\/(.+)/)) {
                             hrefs.push(href)
                         }
                     })
@@ -114,7 +109,7 @@ async function getCards(ext) {
                     .find('.tgme_widget_message_photo_wrap')
                     .attr('style')
                     .match(/image\:url\('(.+)'\)/)[1]
-                remarks = hrefs[0].match(/https:\/\/(.+)\/s\//)[1].replace(/(115\.com)|(anxia\.com)/, '115')
+                remarks = hrefs[0].match(/https:\/\/(.+)\/(s|t)\//)[1].replace(/(115\.com)|(anxia\.com)/, '115')
                 .replace(/(pan\.quark\.cn)/, '夸克')
                 .replace(/(drive\.uc\.cn)/, 'UC')
                 .replace(/(www\.aliyundrive\.com)|(www\.alipan\.com)/, '阿里')
@@ -135,7 +130,7 @@ async function getCards(ext) {
             })
         })
 
-        let nextPage = $('link[rel="prev"]').attr('href')
+        let nextPage = $('.js-messages_more_wrap a').attr('href')
         nextPage = nextPage ? `https://t.me${nextPage}` : ''
         if (nextPage) {
             let config = {
@@ -210,31 +205,26 @@ async function search(ext) {
             let remarks = ''
             try {
                 const html = $(element).find('.tgme_widget_message_text').html()
-                html.split('<br>').forEach((e) => {
-                    const titletext = e.trim()
-                    if (/(名称|名字|短剧|资源标题)(：|:)/.test(titletext)) {
-                        title = titletext
-                            .split(/：|:/)[1]
-                            .replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '')
-                            .replace(/【[^】]*】/g, '')
-                            .trim()
-                            .split(/（|\(|\[/)[0]
-                    } else if (/(.+)\s(更新?至|全).*集/.test(titletext)) {
-                        title = titletext.split(' ')[0]
-                        .replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '')
-                        .replace(/【[^】]*】/g, '')
-                    } else if (/S\d+/.test(titletext)) {
-                        title = titletext.split('S')[0]
-                        .replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '')
-                        .replace(/【[^】]*】/g, '')
-                    }
-                })
-                title = title.replace('<b>', '')
+                   html.split('<br>').forEach((e) => {
+                       const titletext = e.trim()
+                       if (/(名称|名字|短剧|资源标题)(：|:)/.test(titletext)) {
+                           title = titletext
+                               .split(/：|:/)[1]
+                               .trim()
+                               .split(/（|\(|\[/)[0]
+                       } else if (/(.+)\s(更新?至|全).*集/.test(titletext)) {
+                           title = titletext.split(' ')[0]
+                       } else if (/S\d+/.test(titletext)) {
+                           title = titletext.split('S')[0]
+                       }
+                   })
+                   title = title.replace(/<b[^>]*>|<\/b>|<a[^>]*>|<\/a>|<mark[^>]*>|<\/mark>|<i[^>]*>|<\/i>/g, '').replace(/【[^】]*】/g, '')
+
                 $(element)
                     .find('.tgme_widget_message_text > a')
                     .each((_, element) => {
                         const href = $(element).attr('href')
-                        if (href.match(/https:\/\/(.+)\/s\/(.+)/)) {
+                        if (href.match(/https:\/\/(.+)\/(s|t)\/(.+)/)) {
                             hrefs.push(href)
                         }
                     })
@@ -242,7 +232,7 @@ async function search(ext) {
                     .find('.tgme_widget_message_photo_wrap')
                     .attr('style')
                     .match(/image\:url\('(.+)'\)/)[1]
-                remarks = hrefs[0].match(/https:\/\/(.+)\/s\//)[1].replace(/(115\.com)|(anxia\.com)/, '115')
+                remarks = hrefs[0].match(/https:\/\/(.+)\/(s|t)\//)[1].replace(/(115\.com)|(anxia\.com)/, '115')
                 .replace(/(pan\.quark\.cn)/, '夸克')
                 .replace(/(drive\.uc\.cn)/, 'UC')
                 .replace(/(www\.aliyundrive\.com)|(www\.alipan\.com)/, '阿里')
