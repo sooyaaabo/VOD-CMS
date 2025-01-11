@@ -1,4 +1,4 @@
-# 2025-01-10 18:00
+# 2025-01-12 01:00
 
 name: Update XPTV JS Files
 
@@ -32,11 +32,13 @@ jobs:
           [hanime]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hanime.js"
           [hohoj]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hohoj.js"
           [jable]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jable.js"
+          [javmove]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/javmove.js"
           [koreapornmovie]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
           [missav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
           [pornhub]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/pornhub.js"
           [ppp]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
           [supjav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
+          [taiav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/taiav.js"
           [xhamster]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
           [hdys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hdys.js"
           [madou]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/madou.js"
