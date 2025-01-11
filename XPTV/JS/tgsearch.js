@@ -96,7 +96,7 @@ async function getCards(ext) {
                            title = titletext.split('S')[0]
                        }
                    })
-                   title = title.replace(/<b>/, '').replace(/4K.*$/g, '')
+                title = title.replace(/<b>/, '').replace(/4K.*$/g, '').replace('发行时间', '')
 
 
                 $(element)
@@ -222,7 +222,7 @@ async function search(ext) {
                            title = titletext.split('S')[0]
                        }
                    })
-                   title = title.replace(/<b>/, '').replace(/4K.*$/g, '')
+                title = title.replace(/<b>/, '').replace(/4K.*$/g, '').replace('发行时间', '')
 
                 $(element)
                     .find('.tgme_widget_message_text > a')
