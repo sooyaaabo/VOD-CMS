@@ -1,3 +1,4 @@
+// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/pandatv.js
 const headers = {
   'Referer': 'https://m.pandalive.co.kr/',
   'Origin': 'https://m.pandalive.co.kr',
