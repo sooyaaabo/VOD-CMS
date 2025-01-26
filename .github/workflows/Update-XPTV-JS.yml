@@ -1,4 +1,4 @@
-# 2025-01-12 20:30
+# 2025-01-26 14:30
 
 name: Update XPTV JS Files
 
@@ -73,6 +73,7 @@ jobs:
           [tiantian]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/tiantian.js"
           [apple]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/apple.js"
           [xingya]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xingya.js"
+          [ystt]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ystt.js"
           [zxzj]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/zxzj.js"
           [sgsd]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/sgsd.js"
           [girigirilove]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ai.js"

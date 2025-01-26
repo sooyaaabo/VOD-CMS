@@ -155,6 +155,12 @@
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xingya.js"
         },
         {
+            "name": "TV-影视天堂",
+            "type": 3,
+            "api": "csp_ystt",
+            "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ystt.js"
+        },
+        {
             "name": "TV-在线之家",
             "type": 3,
             "api": "csp_Zxzj",
