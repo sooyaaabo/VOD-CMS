@@ -1,29 +1,30 @@
-// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/guanying.js
-//来自群友'Qi Qi'
+// 引用链接: https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/GYING_2025_2.js
+//方佬改进
+//2025-2-5由于网站dns劫持，修改
 const cheerio = createCheerio()
 const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/604.1.14 (KHTML, like Gecko)'
 
 const appConfig = {
 	ver: 1,
 	title: '观影网',
-	site: 'https://www.gying.org',
+	site: 'https://www.gying.org/',
 	tabs: [
 		{
 			name: '电影',
 			ext: {
-				id: '/mv/------',
+				id: 'mv?page=',
 			},
 		},
 		{
 			name: '剧集',
 			ext: {
-				id: '/tv/------',
+				id: 'tv?page=',
 			},
 		},
 		{
 			name: '动漫',
 			ext: {
-				id: '/ac/------',
+				id: 'ac?page=',
 			},
 		}
 		
@@ -37,17 +38,20 @@ async function getCards(ext) {
 	ext = argsify(ext)
 	let cards = []
 	let { page = 1, id } = ext
-	const url =appConfig.site + id + page
+	const url =`${appConfig.site}${id}${page}`
+       //$utils.toastError(url);
 	const { data } = await $fetch.get(url, {
     headers: {
 		"User-Agent": UA,
   	  },
 });
 	const $ = cheerio.load(data)
+	
 	const t1 = $('p.error').text()
 	  if ($('p.error').length > 0) { 
 		$utils.openSafari(appConfig.site, UA);
 	  }
+	  
 	
 	const scriptContent = $('script').filter((_, script) => {
 			return $(script).html().includes('_obj.header');
@@ -72,7 +76,7 @@ async function getCards(ext) {
 				  vod_pic: `https://s.tutu.pm/img/${inlistData["ty"]}/${item}.webp`,
 				  vod_remarks: inlistData["g"][index], 
 				  ext: {
-					  url: `https://www.gyg.la/res/downurl/${inlistData["ty"]}/${item}`,
+					  url: `${appConfig.site}res/downurl/${inlistData["ty"]}/${item}`,
 				  },
 			  })
 	})	
@@ -87,6 +91,7 @@ async function getTracks(ext) {
 	ext = argsify(ext)
     let tracks = []
 	let url = ext.url
+
 	const { data } = await $fetch.get(url, {
 		headers: {
 			'User-Agent': UA,
@@ -95,10 +100,28 @@ async function getTracks(ext) {
 	 const respstr =JSON.parse(data)
 
 	 if(respstr.hasOwnProperty('panlist')){
-
+   	 const regex = {
+	            '中英': /中英/g,
+	            '1080P': /1080P/g,
+	            '杜比': /杜比/g,
+	            '原盘': /原盘/g,
+	            '1080p': /1080p/g,
+	            '双语字幕': /双语字幕/g,
+       	 };
      respstr.panlist.url.forEach((item, index) => {
+
+	    	 let name = ''
+           	 for (const keyword in regex) {
+                	const matches = respstr.panlist.name[index].match(regex[keyword]);
+                	if(matches){
+               
+               		 name = `${name}${matches[0]}`
+               	 	}
+             
+           	 }
+//${respstr.panlist.tname[respstr.panlist.type[index]]}
 			tracks.push({
-				name:'网盘',
+				name:name,
 				pan: item,
 				ext: {
 					url: '',
@@ -107,7 +130,7 @@ async function getTracks(ext) {
 		})
    }else if(respstr.hasOwnProperty('file')){
 
-   $utils.toastError('网盘验证掉签')
+   $utils.toastError('网盘验证掉签请前往主站完成验证数字')
    }else{
 
 	$utils.toastError('没有网盘资源');
