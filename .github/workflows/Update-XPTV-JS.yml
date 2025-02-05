@@ -85,7 +85,7 @@ jobs:
           [aomi]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/aomi.js"
           [baipiao]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/baipiao.js" 
           [duoduo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yydsys.js"
-          [guanying]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/guanying.js"
+          [guanying]="https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/GYING_2025_2.js"
           [labipan]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/labipan.js"
           [leijing]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/leijing.js"
           [liuqu]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/liuqu.js"
