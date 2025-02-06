@@ -70,6 +70,11 @@
         "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod/"
     },
     {
+        "name": "腐剧TV",
+        "type": 1,
+        "api": "http://www.fuju2024.cc:8013/ruifenglb_api.php/provide/vod/"
+    },
+    {
         "name": "官网资源",
         "type": 1,
         "api": "http://gwcms.cttv.vip/api.php/provide/vod/"
@@ -268,6 +273,11 @@
         "name": "影视猫",
         "type": 1,
         "api": "http://ysm.tkbot.fun/api.php/provide/vod/"
+    },
+    {
+        "name": "优质资源",
+        "type": 1,
+        "api": "https://api.yzzy-api.com/inc/api_mac10_all.php"
     },
     {
         "name": "鱼乐资源",
