@@ -1,10 +1,10 @@
 {
     "sites": [
         {
-            "name": "LemonLive",
+            "name": "Live-斗鱼",
             "type": 3,
-            "api": "csp_nmlive",
-            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nmlive.js"
+            "api": "csp_douyu",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/douyu.js"
         }
     ]
 }

@@ -1,4 +1,4 @@
-# 2025-01-26 14:30
+# 2025-02-13 22:30
 
 name: Update XPTV JS Files
 
@@ -78,6 +78,7 @@ jobs:
           [sgsd]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/sgsd.js"
           [girigirilove]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ai.js"
           [nmlive]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nmlive.js"
+          [douyu]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/douyu.js"
           [youtube]="https://gist.githubusercontent.com/Yswag/98b86b68755f698e2f601962f76c036a/raw/you.js"
           [alist_xiaoya]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/alist_xiaoya.js"
           [alist_tvbox]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/alist_tvbox.js"
