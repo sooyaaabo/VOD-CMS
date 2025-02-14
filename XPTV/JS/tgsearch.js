@@ -1,4 +1,4 @@
-// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/tgs.js
+// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/tgs_xp.js
 const cheerio = createCheerio()
 /*
 {	
@@ -137,7 +137,7 @@ async function getCards(ext) {
         })
 
         let nextPage = $('.js-messages_more_wrap a').attr('href')
-        nextPage = nextPage ? `https://t.me${nextPage}` : ''
+        nextPage = nextPage ? `https://tgs.xptvhelper.link${nextPage}` : ''
         if (nextPage) {
             let config = {
                 hasMore: true,

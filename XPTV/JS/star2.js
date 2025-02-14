@@ -11,7 +11,7 @@ const appConfig = {
 		{
 			name: '電影',
 			ext: {
-				id: 'dy',
+				id: 'mv',
 			},
 		},
 		{

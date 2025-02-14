@@ -1,11 +1,11 @@
-// 引用链接: https://gist.githubusercontent.com/occupy-pluto/ad857b12b6b8adebd99b8de42d87b983/raw/wogg.js
+// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/wogg.js
 const cheerio = createCheerio()
 const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/604.1.14 (KHTML, like Gecko)'
 
 const appConfig = {
 	ver: 1,
 	title: '玩偶哥哥',
-	site: 'https://www.wogg.net',
+	site: 'https://www.wogg.one',
 
 	tabs: [
 		{
