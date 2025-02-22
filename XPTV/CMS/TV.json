@@ -51,6 +51,11 @@
             "api": "http://ys9.cttv.vip/api.php/provide/vod/"
         },
         {
+            "name": "TV-豆瓣资源",
+            "type": 1,
+            "api": "https://caiji.dbzy.tv/api.php/provide/vod/at/josn"
+        },
+        {
             "name": "TV-二次萌影视",
             "type": 1,
             "api": "https://www.ecmys.com/api.php/provide/vod/"
