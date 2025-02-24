@@ -1,4 +1,4 @@
-// 引用链接: https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/alist_xiaoya.js
+// 引用链接: https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/alist_xiaoya.js
 const cheerio = createCheerio()
 
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'
@@ -240,6 +240,11 @@ async function getPlayinfo(ext) {
         token = argsify($config_str)?.token || $cache.get('alist_xiaoya_token')
     }
 
+    let mp4_url = host+'/d/'+encodeURIComponent(path)
+
+   // $utils.toastError(jsonify(mp4_url))
+
+/*
     let url = `${host}/api/fs/get`
 
     let headers = {
@@ -250,14 +255,20 @@ async function getPlayinfo(ext) {
     const { data } = await $fetch.post(url, { path: path }, { headers: headers })
 
     let playUrl = argsify(data).data.raw_url
-
-    return jsonify({ urls: [playUrl] })
+*/
+    return jsonify({ urls: [mp4_url] })
 }
+
+
+
+
+
+
 
 async function search(ext) {
     ext = argsify(ext)
     let cards = []
-
+    let page = ext.page || 1
     if (ext.text.startsWith('xiaoya:')) {
         function isValid(input) {
             const regex = /^https?:\/\/[^\s\/:]+(:\d+)?/
@@ -309,8 +320,12 @@ async function search(ext) {
     if (typeof $config_str !== 'undefined') {
         host = argsify($config_str)?.url || $cache.get('alist_xiaoya_host')
     }
-    const url = `${host}/sou?box=${text}&type=video&url=`
+if (page===1){
+ url = `${host}/sou?box=${text}&type=video&url=`
+}else{
+url = `${host}/sou?box=&type=video&url=`
 
+}
     const { data } = await $fetch.get(url)
 
     const $ = cheerio.load(data)
