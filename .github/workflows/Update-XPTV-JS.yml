@@ -1,4 +1,4 @@
-# 2025-02-24 17:10
+# 2025-03-06 16:00
 
 name: Update XPTV JS Files
 
@@ -104,6 +104,7 @@ jobs:
           [mucpan]="https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/mucpan.js"
           [xpanpan]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xpanpan.js"
           [xzys]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xzys.js"
+          [yunchao]="https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/yunchao.js"
           [yunpan8]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/yunpan8.js"
           [yunpanres]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/yunpanres.js"
           [mihdr]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/mihdr.js"

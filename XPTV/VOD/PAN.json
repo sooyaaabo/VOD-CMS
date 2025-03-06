@@ -127,6 +127,12 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/xzys.js"
         },
         {
+            "name": "PAN-云巢",
+            "type": 3,
+            "api": "csp_js/yunchao",
+            "ext": "https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/yunchao.js" 
+        },
+        {
             "name": "PAN-云盘吧",
             "type": 3,
             "api": "csp_yunpan8",
