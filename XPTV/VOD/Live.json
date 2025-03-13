@@ -5,6 +5,12 @@
             "type": 3,
             "api": "csp_douyu",
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/douyu.js"
-        }
+        },
+        {
+             "name": "Live-LemonLive",
+             "type": 3,
+             "api": "csp_nmlive",
+             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/nmlive.js"
+         }
     ]
 }
