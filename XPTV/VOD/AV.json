@@ -49,6 +49,12 @@
             "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/main/js/kanav.js"
         },
         {
+            "name": "AV-KBJFan",
+            "type": 3,
+            "api": "csp_kbjfan",
+            "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/kbjfan.js"
+        },
+        {
             "name": "AV-KoreaPornMovie",
             "type": 3,
             "api": "csp_KPM",

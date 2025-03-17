@@ -1,4 +1,4 @@
-# 2025-03-16 10:45
+# 2025-03-17 23:00
 
 name: Update XPTV JS Files
 
@@ -34,6 +34,7 @@ jobs:
           [jable]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jable.js"
           [javmove]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/javmove.js"
           [kanav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/kanav.js"
+          [kbjfan]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/kbjfan.js"
           [koreapornmovie]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/KoreaPornMovie.js"
           [missav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/missav.js"
           [pandatv]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/pandatv.js"
