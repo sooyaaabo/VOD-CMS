@@ -7,6 +7,12 @@
             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/douyu.js"
         },
         {
+             "name": "Live-虎牙",
+             "type": 3,
+             "api": "csp_huya",
+             "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/huya.js"
+        },
+        {
              "name": "Live-LemonLive",
              "type": 3,
              "api": "csp_nmlive",
