@@ -1,4 +1,4 @@
-# 2025-03-19 18:20
+# 2025-03-21 21:00
 
 name: Update XPTV JS Files
 
@@ -42,6 +42,7 @@ jobs:
           [ppp]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ppp.js"
           [supjav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/SupJav.js"
           [taiav]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/taiav.js"
+          [twivideo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/twivideo.js"
           [xhamster]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xhamster.js"
           [hdys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hdys.js"
           [madou]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/madou.js"
