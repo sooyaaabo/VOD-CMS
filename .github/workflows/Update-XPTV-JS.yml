@@ -1,4 +1,4 @@
-# 2025-03-21 21:00
+# 2025-03-25 17:00
 
 name: Update XPTV JS Files
 
@@ -86,7 +86,7 @@ jobs:
           [huya]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/huya.js"
           [youtube]="https://gist.githubusercontent.com/Yswag/98b86b68755f698e2f601962f76c036a/raw/you.js"
           [alist_xiaoya]="https://raw.githubusercontent.com/kingreevice/my_xptv/main/js/alist_xiaoya.js"
-          [alist_tvbox]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/alist_tvbox.js"
+          [alist_tvbox]="https://raw.githubusercontent.com/netcookies/xptv-extensions/main/alist_tvbox.js"
           [wobg]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/wobg.js"
           [aomi]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/aomi.js"
           [baipiao]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/baipiao.js" 
