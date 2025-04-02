@@ -1,4 +1,4 @@
-// 引用链接: https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/czzy.js
+// 引用链接: https://raw.githubusercontent.com/fangkuia/XPTV/main/js/czzy.js
 const cheerio = createCheerio()
 const CryptoJS = createCryptoJS()
 
@@ -7,7 +7,7 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 let appConfig = {
     ver: 1,
     title: '廠長',
-    site: 'https://www.czzyvideo.com',
+    site: 'https://www.czzymovie.com',
 }
 
 async function getConfig() {
