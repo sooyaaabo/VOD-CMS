@@ -1,4 +1,4 @@
-# 2025-04-03 00:00
+# 2025-04-16 16:00
 
 name: Update XPTV JS Files
 
@@ -54,6 +54,7 @@ jobs:
           [4kav]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/4kav.js"
           [age]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/age.js"
           [anfuns]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/anfuns.js"
+          [aowu]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/aowu.js"
           [catflix]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/catflix.js"
           [hdmoli]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hdmoli.js"
           [libvio]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/libvio.js"
@@ -68,13 +69,16 @@ jobs:
           [hjkk]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/hjkk.js"
           [bttwo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/bttwo.js"
           [jpyy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jpyy.js"
+          [jdys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jdys.js"
           [jcy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jcy.js"
+          [laodifang]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/laodifang.js"
           [ole]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ole.js"
           [ppxys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/ppxys.js"
           [saohuo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/saohuo.js"
           [subaibai]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/subaibai.js"
           [tiantian]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/tiantian.js"
           [apple]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/apple.js"
+          [xiaohys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xiaohys.js"
           [xingya]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/xingya.js"
           [ystt]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ystt.js"
           [zxzj]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/zxzj.js"
