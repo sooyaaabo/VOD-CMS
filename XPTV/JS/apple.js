@@ -1,14 +1,12 @@
 // 引用链接: https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/apple.js
-// const axios = require('axios')
-// const CryptoJS = require('crypto-js')
 const CryptoJS = createCryptoJS()
 
 const UA = 'okhttp/3.12.11'
 
 let appConfig = {
-    ver: 1,
+    ver: 20250511,
     title: '小蘋果',
-    site: 'http://item.xpgtv.com',
+    site: 'http://item.xpgcom.com',
     tabs: [
         {
             name: '电影',
@@ -110,17 +108,19 @@ async function getPlayinfo(ext) {
     let key = ext.key
     const url = `http://c.xpgtv.net/m3u8/${key}.m3u8`
     const headers = {
-        token2: 'enxerhSl0jk2TGhbZCygMdwoKqOmyxsk/Kw8tVy4dsRBE1o1xBhWhoFbh98=',
-        token: 'RXQbgQKl3QkFZkIPGwGvH5kofvCokkkn/a893wC2IId7HQFmy0Eh24osz555X12xGVFxQLTaGuBqU/Y7KU4lStp4UjR7giPxdwoTOsU6R3oc4yZZTQc/yTKh1mH3ckZhx6VsQCEoFf6q',
-        version: 'XPGBOX com.phoenix.tv1.3.3',
+        token2: 'SnAXiSW8vScXE0Z9aDOnK5xffbO75w1+uPom3WjnYfVEA1oWtUdi2Ihy1N8=',
+        token: 'ElEDlwCVgXcFHFhddiq2JKteHofExRBUrfNlmHrWetU3VVkxnzJAodl52N9EUFS+Dig2A/fBa/V9RuoOZRBjYvI+GW8kx3+xMlRecaZuECdb/3AdGkYpkjW3wCnpMQxf8vVeCz5zQLDr8l8bUChJiLLJLGsI+yiNskiJTZz9HiGBZhZuWh1mV1QgYah5CLTbSz8=',
+        version: 'XPGBOX com.phoenix.tv1.5.7',
         user_id: 'XPGBOX',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
         screenx: '1280',
         screeny: '720',
-        timestamp: `${Math.floor(Date.now() / 1000)}`,
+        // timestamp: `${Math.floor(Date.now() / 1000)}`,
     }
-    const str = `||||DC6FFCB55FA||861824127032820||12702720||Asus/Asus/ASUS_I003DD:7.1.2/20171130.376229:user/release-keysXPGBOX com.phoenix.tv1.3.3${headers.timestamp}`
-    headers.hash = CryptoJS.MD5(str).toString().toLowerCase().substring(8, 12)
+    // const str = `||||DC6FFCB55FA||861824127032820||12702720||Asus/Asus/ASUS_I003DD:7.1.2/20171130.376229:user/release-keysXPGBOX com.phoenix.tv1.3.3${headers.timestamp}`
+    // headers.hash = CryptoJS.MD5(str).toString().toLowerCase().substring(8, 12)
+    headers.hash = 'd78a'
+    headers.timestamp = '1743060300'
 
     return jsonify({ urls: [url], headers: [headers] })
 }
