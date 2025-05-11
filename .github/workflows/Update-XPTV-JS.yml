@@ -1,4 +1,4 @@
-# 2025-04-16 16:00
+# 2025-05-11 18:30
 
 name: Update XPTV JS Files
 
@@ -72,6 +72,7 @@ jobs:
           [jdys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jdys.js"
           [jcy]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jcy.js"
           [laodifang]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/laodifang.js"
+          [zero]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/zero.js"
           [ole]="https://raw.githubusercontent.com/fangkuia/XPTV/main/js/ole.js"
           [ppxys]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/ppxys.js"
           [saohuo]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/saohuo.js"
