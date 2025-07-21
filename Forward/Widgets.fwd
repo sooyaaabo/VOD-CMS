@@ -67,15 +67,6 @@
       "url": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS-Widgets/main/Forward/JS/imdb_discovery.js"
     },
     {
-      "id": "imdb",
-      "title": "IMDB",
-      "description": "IMDB",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.0",
-      "author": "pack1r",
-      "url": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS-Widgets/main/Forward/JS/imdb.js"
-    },
-    {
       "id": "person.movie.tmdb",
       "title": "TMDB人物影视作品",
       "description": "获取 TMDB 的榜单数据",
