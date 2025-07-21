@@ -659,24 +659,31 @@ async function fetchTmdbData(api, params) {
         fetchTmdbGenres()
     ]);
 
-    return data.results.map((item) => {
-        const mediaType = item.media_type || (item.title ? 'movie' : 'tv');
-        const genreIds = item.genre_ids || [];
-        const genreTitle = getTmdbGenreTitles(genreIds, mediaType);
+    return data.results
+        .filter((item) => {
+            return item.poster_path &&
+                   item.id &&
+                   (item.title || item.name) &&
+                   (item.title || item.name).trim().length > 0;
+        })
+        .map((item) => {
+            const mediaType = item.media_type || (item.title ? 'movie' : 'tv');
+            const genreIds = item.genre_ids || [];
+            const genreTitle = getTmdbGenreTitles(genreIds, mediaType);
 
-        return {
-            id: item.id,
-            type: "tmdb",
-            title: item.title || item.name,
-            description: item.overview,
-            releaseDate: item.release_date || item.first_air_date,
-            backdropPath: item.backdrop_path,
-            posterPath: item.poster_path,
-            rating: item.vote_average,
-            mediaType: mediaType,
-            genreTitle: genreTitle
-        };
-    });
+            return {
+                id: item.id,
+                type: "tmdb",
+                title: item.title || item.name,
+                description: item.overview,
+                releaseDate: item.release_date || item.first_air_date,
+                backdropPath: item.backdrop_path,
+                posterPath: item.poster_path,
+                rating: item.vote_average,
+                mediaType: mediaType,
+                genreTitle: genreTitle
+            };
+        });
 }
 
 async function loadTmdbTrendingData() {
@@ -1534,21 +1541,28 @@ async function fetchImdbItemsForDouban(scItems) {
                     doubanItem: scItem
                 });
 
-                return allMatches.map(match => ({
-                    id: match.id,
-                    type: "tmdb",
-                    title: match.title ?? match.name,
-                    description: match.overview,
-                    releaseDate: match.release_date ?? match.first_air_date,
-                    backdropPath: match.backdrop_path,
-                    posterPath: match.poster_path,
-                    rating: match.vote_average,
-                    mediaType: match.media_type,
-                    genreTitle: generateGenreTitleFromTmdb(match, scItem),
-                    originalDoubanTitle: scItem.title,
-                    originalDoubanYear: scItem.year,
-                    originalDoubanId: scItem.id
-                }));
+                return allMatches
+                    .filter(match => {
+                        return match.poster_path &&
+                               match.id &&
+                               (match.title || match.name) &&
+                               (match.title || match.name).trim().length > 0;
+                    })
+                    .map(match => ({
+                        id: match.id,
+                        type: "tmdb",
+                        title: match.title ?? match.name,
+                        description: match.overview,
+                        releaseDate: match.release_date ?? match.first_air_date,
+                        backdropPath: match.backdrop_path,
+                        posterPath: match.poster_path,
+                        rating: match.vote_average,
+                        mediaType: match.media_type,
+                        genreTitle: generateGenreTitleFromTmdb(match, scItem),
+                        originalDoubanTitle: scItem.title,
+                        originalDoubanYear: scItem.year,
+                        originalDoubanId: scItem.id
+                    }));
             } else {
                 const bestMatch = forceFirstResult && tmdbDatas.length > 0 ? 
                     tmdbDatas[0] : 
@@ -1556,7 +1570,9 @@ async function fetchImdbItemsForDouban(scItems) {
                         doubanItem: scItem
                     });
                 
-                if (bestMatch) {
+                if (bestMatch && bestMatch.poster_path && bestMatch.id && 
+                    (bestMatch.title || bestMatch.name) && 
+                    (bestMatch.title || bestMatch.name).trim().length > 0) {
                     return {
                         id: bestMatch.id,
                         type: "tmdb",
