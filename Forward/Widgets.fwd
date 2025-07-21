@@ -65,15 +65,6 @@
       "version": "2.0.0",
       "author": "Autism",
       "url": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS-Widgets/main/Forward/JS/imdb_discovery.js"
-    },
-    {
-      "id": "person.movie.tmdb",
-      "title": "TMDB人物影视作品",
-      "description": "获取 TMDB 的榜单数据",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.4",
-      "author": "Evan",
-      "url": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS-Widgets/main/Forward/JS/person_movie.js"
-        }
-    ]
+    }
+  ]
 }
