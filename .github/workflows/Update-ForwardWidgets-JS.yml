@@ -32,7 +32,7 @@ jobs:
           [Move_list]="https://raw.githubusercontent.com/quantumultxx/ForwardWidgets/main/Widgets/Move_list.js"
           [HotPicks]="https://raw.githubusercontent.com/2kuai/ForwardWidgets/main/Widgets/HotPicks.js"
           [Bangumi_v2.0.0]="https://raw.githubusercontent.com/opix-maker/Forward/main/js/Bangumi_v2.0.0.js"
-          [IMDb]="https://raw.githubusercontent.com/opix-maker/Forward/main/js/IMDb.js"
+          [imdb_discovery]="https://raw.githubusercontent.com/opix-maker/Forward/main/js/IMDb.js"
           [imdb]="https://raw.githubusercontent.com/pack1r/ForwardWidgets/main/widgets/imdb.js"
           [person_movie]="https://raw.githubusercontent.com/EmrysChoo/ForwardWidgets/main/Widgets/person_movie.js"
           )
