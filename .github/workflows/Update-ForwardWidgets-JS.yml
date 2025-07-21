@@ -24,7 +24,7 @@ jobs:
 
     - name: Download JS files
       run: |
-        mkdir -p VOD-CMS-Widgets/ForwardWidgets/JS
+        mkdir -p VOD-CMS-Widgets/Forward/JS
         declare -A jsfiles=(
           [douban]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/douban.js"
           [trakt]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/trakt.js"
@@ -39,8 +39,8 @@ jobs:
         
         for js_name in "${!jsfiles[@]}"; do
           url="${jsfiles[$js_name]}"
-          curl -A -L -o "VOD-CMS-Widgets/ForwardWidgets/JS/${js_name}.js" "$url"
-          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS-Widgets/ForwardWidgets/JS/$js_name.js"
+          curl -A -L -o "VOD-CMS-Widgets/Forward/JS/${js_name}.js" "$url"
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS-Widgets/Forward/JS/$js_name.js"
         done
 
     - name: Commit and push changes
@@ -48,7 +48,7 @@ jobs:
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add ForwardWidgets/JS/
+        git add Forward/JS/
         git commit -m "Synchronously Update JS files" || echo "No changes to commit"
         git push
         
