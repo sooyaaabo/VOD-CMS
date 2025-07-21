@@ -1,0 +1,59 @@
+# 2025-07-21 09:00
+
+name: Update ForwardWidgets JS Files
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"
+
+permissions:
+  actions: write
+  contents: write
+
+jobs:
+  download-js:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        repository: sooyaaabo/VOD-CMS
+        path: VOD-CMS
+
+    - name: Download JS files
+      run: |
+        mkdir -p VOD-CMS/ForwardWidgets/JS
+        declare -A jsfiles=(
+          [douban]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/douban.js"
+          [trakt]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/trakt.js"
+          [zhuijurili]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/zhuijurili.js"
+          [Move_list]="https://raw.githubusercontent.com/quantumultxx/ForwardWidgets/main/Widgets/Move_list.js"
+          [HotPicks]="https://raw.githubusercontent.com/2kuai/ForwardWidgets/main/Widgets/HotPicks.js"
+          [Bangumi_v2.0.0]="https://raw.githubusercontent.com/opix-maker/Forward/main/js/Bangumi_v2.0.0.js"
+          [IMDb]="https://raw.githubusercontent.com/opix-maker/Forward/main/js/IMDb.js"
+          [imdb]="https://raw.githubusercontent.com/pack1r/ForwardWidgets/main/widgets/imdb.js"
+          [person_movie]="https://raw.githubusercontent.com/EmrysChoo/ForwardWidgets/main/Widgets/person_movie.js"
+          )
+        
+        for js_name in "${!jsfiles[@]}"; do
+          url="${jsfiles[$js_name]}"
+          curl -A -L -o "VOD-CMS/ForwardWidgets/JS/${js_name}.js" "$url"
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/ForwardWidgets/JS/$js_name.js"
+        done
+
+    - name: Commit and push changes
+      working-directory: VOD-CMS
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add ForwardWidgets/JS/
+        git commit -m "Synchronously Update JS files" || echo "No changes to commit"
+        git push
+        
+    - name: Clear Workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        retain_days: 0
+        keep_minimum_runs: 12
