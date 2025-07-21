@@ -19,12 +19,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: sooyaaabo/VOD-CMS
-        path: VOD-CMS
+        repository: sooyaaabo/VOD-CMS-Widgets
+        path: VOD-CMS-Widgets
 
     - name: Download JS files
       run: |
-        mkdir -p VOD-CMS/ForwardWidgets/JS
+        mkdir -p VOD-CMS-Widgets/ForwardWidgets/JS
         declare -A jsfiles=(
           [douban]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/douban.js"
           [trakt]="https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/trakt.js"
@@ -39,12 +39,12 @@ jobs:
         
         for js_name in "${!jsfiles[@]}"; do
           url="${jsfiles[$js_name]}"
-          curl -A -L -o "VOD-CMS/ForwardWidgets/JS/${js_name}.js" "$url"
-          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/ForwardWidgets/JS/$js_name.js"
+          curl -A -L -o "VOD-CMS-Widgets/ForwardWidgets/JS/${js_name}.js" "$url"
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS-Widgets/ForwardWidgets/JS/$js_name.js"
         done
 
     - name: Commit and push changes
-      working-directory: VOD-CMS
+      working-directory: VOD-CMS-Widgets
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"

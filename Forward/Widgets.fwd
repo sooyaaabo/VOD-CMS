@@ -1,7 +1,7 @@
 {
   "title": "sooyaaabo's ForwardWidgets",
   "description": "ForwardWidgets自用合集 by sooyaaabo",
-  "icon": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS/main/Forward/ForwardWidgets.png",
+  "icon": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS-Widgets/main/Forward/ForwardWidgets.png",
   "widgets": [
     {
       "id": "douban",

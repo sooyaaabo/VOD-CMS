@@ -1,4 +1,4 @@
-# 2025-05-11 18:30
+# 2025-07-21 09:00
 
 name: Update XPTV JS Files
 
@@ -19,12 +19,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: sooyaaabo/VOD-CMS
-        path: VOD-CMS
+        repository: sooyaaabo/VOD-CMS-Widgets
+        path: VOD-CMS-Widgets
 
     - name: Download JS files
       run: |
-        mkdir -p VOD-CMS/XPTV/JS
+        mkdir -p VOD-CMS-Widgets/XPTV/JS
         declare -A jsfiles=(
           [91jav]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/91jav.js"
           [avdb]="https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/avdb.js"
@@ -122,12 +122,12 @@ jobs:
         
         for js_name in "${!jsfiles[@]}"; do
           url="${jsfiles[$js_name]}"
-          curl -A -L -o "VOD-CMS/XPTV/JS/${js_name}.js" "$url"
-          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS/XPTV/JS/$js_name.js"
+          curl -A -L -o "VOD-CMS-Widgets/XPTV/JS/${js_name}.js" "$url"
+          sed -i "1s|^|// 引用链接: $url\n|" "VOD-CMS-Widgets/XPTV/JS/$js_name.js"
         done
 
     - name: Commit and push changes
-      working-directory: VOD-CMS
+      working-directory: VOD-CMS-Widgets
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
