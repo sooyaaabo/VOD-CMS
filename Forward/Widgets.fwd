@@ -1,0 +1,88 @@
+{
+    "title": "sooyaaabo's ForwardWidgets",
+    "description": "ForwardWidgets自用合集 by sooyaaabo",
+    "icon": "https://raw.githubusercontent.com/sooyaaabo/VOD-CMS-Widgets/main/Forward/ForwardWidgets.png",
+    "widgets": [
+        {
+            "id": "douban",
+            "title": "豆瓣我看&豆瓣个性化推荐",
+            "description": "解析豆瓣想看、在看、已看以及根据个人数据生成的个性化推荐",
+            "requiredVersion": "0.0.1",
+            "version": "1.0.15",
+            "author": "huangxd",
+            "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/douban.js"
+        },
+        {
+            "id": "trakt",
+            "title": "Trakt我看&Trakt个性化推荐",
+            "description": "解析Trakt想看、在看、已看、片单、追剧日历以及根据个人数据生成的个性化推荐",
+            "requiredVersion": "0.0.1",
+            "version": "1.0.11",
+            "author": "huangxd",
+            "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/trakt.js"
+        },
+        {
+            "id": "zhuijurili",
+            "title": "追剧日历(今/明日播出、周历、各项榜单、今日推荐)",
+            "description": "解析追剧日历今/明日播出剧集/番剧/国漫/综艺、周历、各项榜单、今日推荐等",
+            "requiredVersion": "0.0.1",
+            "version": "1.0.4",
+            "author": "huangxd",
+            "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/main/widgets/zhuijurili.js"
+        },
+        {
+            "id": "forward.combined.media.lists",
+            "title": "影视榜单",
+            "description": "获取TMDB和豆瓣的榜单",
+            "requiredVersion": "0.0.1",
+            "version": "1.0.0",
+            "author": "阿米诺斯",
+            "url": "https://raw.githubusercontent.com/quantumultxx/ForwardWidgets/main/Widgets/Move_list.js"
+        },
+        {
+            "id": "hot_picks",
+            "title": "热门精选",
+            "description": "获取最新热播剧和热门影片推荐",
+            "requiredVersion": "0.0.1",
+            "version": "1.1.7",
+            "author": "两块",
+            "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/main/Widgets/HotPicks.js"
+        },
+        {
+            "id": "bangumi_charts_tmdb_v3",
+            "title": "Bangumi 热门榜单",
+            "description": "获取Bangumi近期热门、每日放送数据，支持榜单筛选。",
+            "requiredVersion": "0.0.1",
+            "version": "2.0.0",
+            "author": "Autism",
+            "url": "https://raw.githubusercontent.com/opix-maker/Forward/main/js/Bangumi_v2.0.0.js"
+        },
+        {
+            "id": "imdb_discovery_final_v2",
+            "title": "IMDb 分类资源 v2",
+            "description": "聚合 IMDb 热门影视资源",
+            "requiredVersion": "0.0.1",
+            "version": "2.0.0",
+            "author": "Autism",
+            "url": "https://raw.githubusercontent.com/opix-maker/Forward/main/js/IMDb.js"
+        },
+        {
+            "id": "imdb",
+            "title": "IMDB",
+            "description": "IMDB",
+            "requiredVersion": "0.0.1",
+            "version": "1.0.0",
+            "author": "pack1r",
+            "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/main/widgets/imdb.js"
+        },
+        {
+            "id": "person.movie.tmdb",
+            "title": "TMDB人物影视作品",
+            "description": "获取 TMDB 的榜单数据",
+            "requiredVersion": "0.0.1",
+            "version": "1.0.4",
+            "author": "Evan",
+            "url": "https://raw.githubusercontent.com/EmrysChoo/ForwardWidgets/main/Widgets/person_movie.js"
+        }
+    ]
+}
