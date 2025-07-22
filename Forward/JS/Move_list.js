@@ -4,7 +4,7 @@ WidgetMetadata = {
   title: "影视榜单",
   description: "影视动画榜单",
   author: "阿米诺斯",
-  site: "https://github.com/quantumultxx",
+  site: "https://github.com/quantumultxx/ForwardWidgets",
   version: "1.0.0",
   requiredVersion: "0.0.1",
   detailCacheDuration: 60,
@@ -37,7 +37,7 @@ WidgetMetadata = {
       description: "今日热门电影与剧集",
       requiresWebView: false,
       functionName: "loadTodayGlobalMedia",
-      cacheDuration: 1,
+      cacheDuration: 60,
       params: [
         { name: "language", title: "语言", type: "language", value: "zh-CN" }
       ]
@@ -47,7 +47,7 @@ WidgetMetadata = {
       description: "本周热门电影与剧集",
       requiresWebView: false,
       functionName: "loadWeekGlobalMovies",
-      cacheDuration: 1,
+      cacheDuration: 60,
       params: [
         { name: "language", title: "语言", type: "language", value: "zh-CN" }
       ]
@@ -353,129 +353,7 @@ WidgetMetadata = {
       ]
     },
 
-    // --- 精选榜单 ---
-    {
-      title: "豆瓣 Top 250 电影",
-      description: "豆瓣评分最高的 250 部电影",
-      requiresWebView: false,
-      functionName: "loadDoubanItemsFromApi",
-      cacheDuration: 3600,
-      params: [
-        { name: "url", 
-          title: "🔗 列表地址", 
-          type: "constant", 
-          value: "https://m.douban.com/rexxar/api/v2/subject_collection/movie_top250/items" },
-        { name: "page", title: "页码", type: "page" },
-        { name: "limit", title: "🔢 每页数量", type: "constant", value: "20" }
-      ]
-    },
 
-    // --- 探索发现 ---
-    {
-      title: "豆瓣电影推荐",
-      description: "按分类、地区、类型标签浏览豆瓣推荐电影",
-      requiresWebView: false,
-      functionName: "loadDoubanRecommendMovies",
-      cacheDuration: 3600,
-      params: [
-        {
-          name: "category", 
-          title: "🏷️ 分类", 
-          type: "enumeration",
-          enumOptions: [ 
-            { title: "全部", value: "全部" }, 
-            { title: "热门电影", value: "热门" }, 
-            { title: "最新电影", value: "最新" }, 
-            { title: "豆瓣高分", value: "豆瓣高分" }, 
-            { title: "冷门佳片", value: "冷门佳片" } 
-          ],
-        },
-        {
-          name: "type", 
-          title: "🌍 地区", 
-          type: "enumeration",
-          value: "全部",
-          belongTo: {
-            paramName: "category",
-            value: ["热门","最新","豆瓣高分","冷门佳片"],
-          },
-          enumOptions: [ 
-            { title: "全部", value: "全部" }, 
-            { title: "华语", value: "华语" }, 
-            { title: "欧美", value: "欧美" }, 
-            { title: "韩国", value: "韩国" }, 
-            { title: "日本", value: "日本" } 
-          ],
-        },
-        {
-          name: "tags", 
-          title: "🎭 类型", 
-          type: "enumeration",
-          value: "",
-          belongTo: {
-            paramName: "category",
-            value: ["全部"],
-          },
-          enumOptions: [
-            { title: "全部", value: "" },
-            { title: "动作", value: "动作" },
-            { title: "科幻", value: "科幻" },
-            { title: "灾难", value: "灾难" },
-            { title: "爱情", value: "爱情" },
-            { title: "喜剧", value: "喜剧" },
-            { title: "悬疑", value: "悬疑" },
-            { title: "犯罪", value: "犯罪" },
-            { title: "冒险", value: "冒险" },
-            { title: "奇幻", value: "奇幻" },
-            { title: "战争", value: "战争" },
-            { title: "历史", value: "历史" },
-            { title: "武侠", value: "武侠" },
-            { title: "惊悚", value: "惊悚" },
-            { title: "恐怖", value: "恐怖" },
-            { title: "情色", value: "情色" },
-            { title: "动画", value: "动画" },
-            { title: "剧情", value: "剧情" },
-            { title: "西部", value: "西部" },
-            { title: "家庭", value: "家庭" },
-            { title: "音乐", value: "音乐" },
-            { title: "运动", value: "运动" },
-            { title: "古装", value: "古装" },
-            { title: "歌舞", value: "歌舞" },
-            { title: "传记", value: "传记" },
-            { title: "短片", value: "短片" },
-            { title: "纪录片", value: "纪录片" }
-          ]
-        },
-        { name: "page", title: "页码", type: "page" },
-        { name: "limit", title: "🔢 每页数量", type: "constant", value: "20" }
-      ]
-    },
-    {
-      title: "豆瓣剧集推荐",
-      description: "按分类、类型浏览豆瓣推荐剧集",
-      requiresWebView: false,
-      functionName: "loadDoubanRecommendShows",
-      cacheDuration: 3600,
-      params: [
-        {
-          name: "type", 
-          title: "🎭 类型", 
-          type: "enumeration",
-          enumOptions: [
-            { title: "综合", value: "tv" }, 
-            { title: "国产剧", value: "tv_domestic" }, 
-            { title: "欧美剧", value: "tv_american" }, 
-            { title: "日剧", value: "tv_japanese" }, 
-            { title: "韩剧", value: "tv_korean" }, 
-            { title: "动画", value: "tv_animation" }, 
-            { title: "纪录片", value: "tv_documentary" } 
-          ],
-          value: "tv"
-        },
-        { name: "page", title: "页码", type: "page" },
-        { name: "limit", title: "🔢 每页数量", type: "constant", value: "20" }
-      ]
-    }
   ]
 };
 
@@ -1142,77 +1020,9 @@ async function loadDoubanHotListWithTmdb(params = {}) {
   return await fetchImdbItemsForDouban(processedItemsWithMultiDetection);
 }
 
-async function loadDoubanRecommendMovies(params = {}) {
-  return await loadDoubanRecommendItems(params, "movie");
-}
 
-async function loadDoubanRecommendShows(params = {}) {
-  return await loadDoubanRecommendItems(params, "tv");
-}
 
-async function loadDoubanRecommendItems(params = {}, mediaType = "movie") {
-  const { start, limit } = calculatePagination(params);
-  const category = params.category || "";
-  const subType = params.type || "";
-  const tags = params.tags || "";
-  const encodedTags = encodeURIComponent(tags);
-  
-  let url;
-  if (category === "\u5168\u90e8" || category === "all") {
-    url = `https://m.douban.com/rexxar/api/v2/${mediaType}/recommend?refresh=0&start=${start}&count=${limit}&selected_categories=${encodeURIComponent(JSON.stringify(params.selected_categories || {}))}&uncollect=false&score_range=0,10`;
-    if (encodedTags) url += `&tags=${encodedTags}`;
-  } else {
-    url = `https://m.douban.com/rexxar/api/v2/subject/recent_hot/${mediaType}?start=${start}&count=${limit}&category=${encodeURIComponent(category)}&type=${encodeURIComponent(subType)}`;
-  }
 
-  const response = await Widget.http.get(url, {
-    headers: {
-      Referer: `https://movie.douban.com/explore`,
-      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    },
-  });
-
-  const items = response.data?.subjects || response.data?.items || [];
-  return items.map((item) => {
-    const rating = item.rating?.value || (item.rate ? parseFloat(item.rate) : undefined);
-    const releaseYear = item.year || item.release_date?.substring(0, 4);
-    const cover = item.cover?.url || item.pic?.normal;
-    const dynamicDesc = item.card_subtitle || item.description || "";
-    
-    let genres = item.genres;
-    
-    if (!genres || (Array.isArray(genres) && genres.length === 0)) {
-        const textToExtract = [
-            item.card_subtitle,
-            item.description,
-            item.abstract,
-            item.intro
-        ].filter(Boolean).join(' ');
-        
-        if (textToExtract) {
-            const extractedGenres = extractGenresFromText(textToExtract);
-            if (extractedGenres.length > 0) {
-                genres = extractedGenres;
-            }
-        }
-    }
-
-    return {
-      id: String(item.id),
-      type: "douban",
-      title: item.title,
-      coverUrl: cover,
-      description: formatItemDescription({
-        description: dynamicDesc,
-        rating: rating,
-        releaseDate: releaseYear ? `${releaseYear}-01-01` : undefined
-      }),
-      rating: rating,
-      releaseDate: releaseYear ? `${releaseYear}-01-01` : undefined,
-      genreTitle: getDoubanGenreTitles(genres || [], null)
-    };
-  });
-}
 
 
 async function fetchTmdbDataForDouban(key, mediaType) {
