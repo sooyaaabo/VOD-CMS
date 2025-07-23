@@ -203,7 +203,7 @@ WidgetMetadata = {
     ],
     version: "1.0.11",
     requiredVersion: "0.0.1",
-    description: "解析Trakt想看、在看、已看、片单、追剧日历以及根据个人数据生成的个性化推荐【五折码：CHEAP.5;七折码：CHEAP】",
+    description: "解析Trakt想看、在看、已看、片单、追剧日历以及根据个人数据生成的个性化推荐【30% off code：CHEAP】",
     author: "huangxd",
     site: "https://github.com/huangxd-/ForwardWidgets"
 };
