@@ -10,28 +10,7 @@ WidgetMetadata = {
   detailCacheDuration: 60,
   modules: [
     // -------------TMDB模块-------------
-    // --- 当前与趋势模块 ---
-    {
-      title: "TMDB 正在热映",
-      description: "当前影院或流媒体上映的电影/剧集",
-      requiresWebView: false,
-      functionName: "tmdbNowPlaying",
-      cacheDuration: 3600,
-      params: [
-        { 
-          name: "type", 
-          title: "🎭类型", 
-          type: "enumeration", 
-          enumOptions: [
-            { title: "电影", value: "movie" },
-            { title: "剧集", value: "tv" }
-          ], 
-          value: "movie" 
-        },
-        { name: "page", title: "页码", type: "page" },
-        { name: "language", title: "语言", type: "language", value: "zh-CN" }
-      ]
-    },
+    // --- 热门模块 ---
     {
       title: "TMDB 今日热门",
       description: "今日热门电影与剧集",
@@ -50,6 +29,17 @@ WidgetMetadata = {
       cacheDuration: 60,
       params: [
         { name: "language", title: "语言", type: "language", value: "zh-CN" }
+      ]
+    },
+    {
+    title: "TMDB 热门电影",
+    description: "当前热门电影",
+    requiresWebView: false,
+    functionName: "tmdbPopularMovies",
+    cacheDuration: 60,
+    params: [
+        { name: "language", title: "语言", type: "language", value: "zh-CN" },
+        { name: "page", title: "页码", type: "page" }
       ]
     },
     // --- 常规发现模块 ---
@@ -603,10 +593,48 @@ async function loadWeekGlobalMovies(params) {
     }));
 }
 
-async function tmdbNowPlaying(params) {
-    const type = params.type || 'movie';
-    const api = type === 'movie' ? "movie/now_playing" : "tv/on_the_air";
-    return await fetchTmdbData(api, params);
+async function tmdbPopularMovies(params) {
+    if ((parseInt(params.page) || 1) === 1) {
+        const data = await loadTmdbTrendingData();
+        return data.popular_movies
+      .slice(0, 15)
+      .map(item => ({
+        id: item.id.toString(),
+        type: "tmdb",
+        title: item.title,
+        genreTitle: item.genreTitle,
+        rating: item.rating,
+        description: item.overview,
+        releaseDate: item.release_date,
+        posterPath: item.poster_url,
+        backdropPath: item.title_backdrop,
+        mediaType: item.type
+            }));
+    }
+    
+    const [data, genres] = await Promise.all([
+        Widget.tmdb.get(`/movie/popular`, { 
+            params: { 
+                language: params.language || 'zh-CN',
+                page: parseInt(params.page) || 1,
+                region: 'CN'
+            } 
+        }),
+        fetchTmdbGenres()
+    ]);
+    
+    return data.results.map(item => ({
+        id: String(item.id),
+        type: "tmdb",
+        title: item.title,
+        description: item.overview,
+        releaseDate: item.release_date,
+        backdropPath: item.backdrop_path,
+        posterPath: item.poster_path,
+        rating: item.vote_average,
+        mediaType: "movie",
+        genreTitle: getTmdbGenreTitles(item.genre_ids, "movie")
+    }));
 }
 
 async function tmdbTopRated(params) {
