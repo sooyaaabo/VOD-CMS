@@ -1181,7 +1181,7 @@ WidgetMetadata = {
       cacheDuration: 3600,
     },
   ],
-  version: "1.0.15",
+  version: "1.0.16",
   requiredVersion: "0.0.1",
   description: "解析豆瓣想看、在看、已看以及根据个人数据生成的个性化推荐【五折码：CHEAP.5;七折码：CHEAP】",
   author: "huangxd",
@@ -1361,16 +1361,29 @@ async function fetchImdbItems(scItems) {
     const tmdbDatas = await fetchTmdbData(title, scItem.type)
 
     if (tmdbDatas.length !== 0) {
+      let matchedItem = null;
+
+      // 遍历 tmdbDatas，寻找匹配的元素
+      for (let i = 0; i < tmdbDatas.length; i++) {
+        if (scItem.title === tmdbDatas[i].title || scItem.title === tmdbDatas[i].name) {
+          matchedItem = tmdbDatas[i];
+          break; // 找到第一个匹配项后立即跳出循环
+        }
+      }
+
+      // 如果找到匹配项，使用该项，否则返回第一个元素
+      const itemToReturn = matchedItem || tmdbDatas[0];
+
       return {
-        id: tmdbDatas[0].id,
+        id: itemToReturn.id,
         type: "tmdb",
-        title: tmdbDatas[0].title ?? tmdbDatas[0].name,
-        description: tmdbDatas[0].overview,
-        releaseDate: tmdbDatas[0].release_date ?? tmdbDatas[0].first_air_date,
-        backdropPath: tmdbDatas[0].backdrop_path,
-        posterPath: tmdbDatas[0].poster_path,
-        rating: tmdbDatas[0].vote_average,
-        mediaType: scItem.type !== "multi" ? scItem.type : tmdbDatas[0].media_type,
+        title: itemToReturn.title ?? itemToReturn.name,
+        description: itemToReturn.overview,
+        releaseDate: itemToReturn.release_date ?? itemToReturn.first_air_date,
+        backdropPath: itemToReturn.backdrop_path,
+        posterPath: itemToReturn.poster_path,
+        rating: itemToReturn.vote_average,
+        mediaType: scItem.type !== "multi" ? scItem.type : itemToReturn.media_type,
       };
     } else {
       return null;
